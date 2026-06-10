@@ -2,13 +2,7 @@
 
 Certified PDFs. No source code. No .lean files.
 
-| File | DOI |
-| ---- | --- |
-| BSD_Formalization.pdf | https://doi.org/10.5281/zenodo.20618654 |
-| ClosingGap.pdf | https://doi.org/10.5281/zenodo.20618654 |
-| M5_BostBound_Certificate.pdf | https://doi.org/10.5281/zenodo.20618650 |
-| Module_23_BSD_J0_143.pdf | https://doi.org/10.5281/zenodo.20618654 |
-| Morningstar_Feasibility_Study.pdf | https://doi.org/10.5281/zenodo.20618658 |
+30 PDFs total.
 
 ## Chain
 
