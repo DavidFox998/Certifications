@@ -1,0 +1,4056 @@
+{
+  "generated": "2026-06-15",
+  "total": 664,
+  "honesty": {
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "sorry": 0,
+    "ym_surface_1": "OPEN",
+    "ns_surface_1": "OPEN",
+    "ns_surface_2": "OPEN",
+    "rh": "OPEN"
+  },
+  "towers": [
+    {
+      "id": "KP.Basic",
+      "label": "KP \u2014 Cluster Expansion (Basic)",
+      "color": "#3b82f6",
+      "open_surface": "YM Surface #1",
+      "count": 4,
+      "bricks": [
+        {
+          "module": "KP.Basic.CERT_Arb",
+          "theorem": "TheoremaAureum.KP.exp_neg_086_lower",
+          "name": "exp_neg_086_lower",
+          "description": "Lower bound e^{-0.86} \u2265 r (certified rational enclosure via Taylor series)."
+        },
+        {
+          "module": "KP.Basic.CERT_Arb",
+          "theorem": "TheoremaAureum.KP.tail_negligible",
+          "name": "tail_negligible",
+          "description": "Tail \u2211_{k\u2265K}(activity)^k bounded by negligible \u03b5 at \u03b2=0.86."
+        },
+        {
+          "module": "KP.Basic.CERT_Arb",
+          "theorem": "TheoremaAureum.KP.w1_poly_rat_086",
+          "name": "w1_poly_rat_086",
+          "description": "Rational polynomial bracket for w\u2081 at \u03b2=0.86 (\u211a enclosure of single-site weight integral)."
+        },
+        {
+          "module": "KP.Basic.D4",
+          "theorem": "TheoremaAureum.KP.w1_0p86_gt_seventh",
+          "name": "w1_0p86_gt_seventh",
+          "description": "Numerical cert: w\u2081(\u03b2=0.86) > 1/7 \u2014 KP summability threshold."
+        }
+      ]
+    },
+    {
+      "id": "KP.Main",
+      "label": "KP \u2014 Cluster Expansion (Main)",
+      "color": "#3b82f6",
+      "open_surface": "YM Surface #1",
+      "count": 2,
+      "bricks": [
+        {
+          "module": "KP.Main",
+          "theorem": "TheoremaAureum.KP.kp_beta0_bracket",
+          "name": "kp_beta0_bracket",
+          "description": "\u03b2\u2080 bracket cert: \u03b2\u2080 \u2208 [0.85, 0.87] (critical inverse coupling interval)."
+        },
+        {
+          "module": "KP.Main",
+          "theorem": "TheoremaAureum.KP.kp_moments_exact",
+          "name": "kp_moments_exact",
+          "description": "Cluster-expansion moment formula: E[f(\u03a6)] = \u2211_\u03b3 \u03c1(\u03b3)\u00b7f(\u03b3)."
+        }
+      ]
+    },
+    {
+      "id": "Towers.RH",
+      "label": "RH \u2014 Riemann Hypothesis Tower",
+      "color": "#8b5cf6",
+      "open_surface": "RH",
+      "count": 2,
+      "bricks": [
+        {
+          "module": "Towers.RH.Chain.C06_ZetaControl",
+          "theorem": "TheoremaAureum.bost_connes_threshold",
+          "name": "bost_connes_threshold",
+          "description": "Bost\u2013Connes KMS phase-transition threshold \u03b2_c in certified rational interval."
+        },
+        {
+          "module": "Towers.RH.ZeroDensity",
+          "theorem": "TheoremaAureum.Towers.RH.N_monotone_in_sigma",
+          "name": "N_monotone_in_sigma",
+          "description": "N(\u03c3,T) is monotone non-increasing in \u03c3 (zero-density counting function)."
+        }
+      ]
+    },
+    {
+      "id": "Towers.NS",
+      "label": "NS \u2014 Navier\u2013Stokes Tower",
+      "color": "#10b981",
+      "open_surface": "NS Surfaces #1 & #2",
+      "count": 80,
+      "bricks": [
+        {
+          "module": "Towers.NS.EnergyIneq",
+          "theorem": "TheoremaAureum.Towers.NS.EnergyMonotone",
+          "name": "EnergyMonotone",
+          "description": "EnergyMonotone u u\u2080 \u2194 \u2203M, \u2200t x, \u2016u t x\u2016 \u2264 M."
+        },
+        {
+          "module": "Towers.NS.EnergyIneq",
+          "theorem": "TheoremaAureum.Towers.NS.EnergyMonotone_of_h1norm_const",
+          "name": "EnergyMonotone_of_h1norm_const",
+          "description": "Constant H1Norm \u2192 EnergyMonotone (schematic)."
+        },
+        {
+          "module": "Towers.NS.EnergyIneq",
+          "theorem": "TheoremaAureum.Towers.NS.EnergyMonotone_zero",
+          "name": "EnergyMonotone_zero",
+          "description": "Zero satisfies EnergyMonotone (M=0)."
+        },
+        {
+          "module": "Towers.NS.EnergyIneq",
+          "theorem": "TheoremaAureum.Towers.NS.H1Norm_eq_norm_apply_zero",
+          "name": "H1Norm_eq_norm_apply_zero",
+          "description": "H1Norm u t = \u2016u 0 0\u2016 (named placeholder unfolder)."
+        },
+        {
+          "module": "Towers.NS.EnergyIneq",
+          "theorem": "TheoremaAureum.Towers.NS.H1Norm_nonneg",
+          "name": "H1Norm_nonneg",
+          "description": "0 \u2264 \u2016u\u2016_{H\u00b9} (placeholder H\u00b9-norm is non-negative)."
+        },
+        {
+          "module": "Towers.NS.EnergyIneq",
+          "theorem": "TheoremaAureum.Towers.NS.H1Norm_zero",
+          "name": "H1Norm_zero",
+          "description": "\u20160\u2016_{H\u00b9} = 0 (zero velocity field has zero placeholder H\u00b9-norm)."
+        },
+        {
+          "module": "Towers.NS.EnergyIneq",
+          "theorem": "TheoremaAureum.Towers.NS.HasFiniteEnergy_add",
+          "name": "HasFiniteEnergy_add",
+          "description": "Finite-energy closed under sum: M\u2081+M\u2082 witness."
+        },
+        {
+          "module": "Towers.NS.EnergyIneq",
+          "theorem": "TheoremaAureum.Towers.NS.HasFiniteEnergy_const",
+          "name": "HasFiniteEnergy_const",
+          "description": "Constant field fun _ _ => c has finite energy (M=\u2016c\u2016)."
+        },
+        {
+          "module": "Towers.NS.EnergyIneq",
+          "theorem": "TheoremaAureum.Towers.NS.HasFiniteEnergy_euclidean_motion",
+          "name": "HasFiniteEnergy_euclidean_motion",
+          "description": "Full E(3): x\u21a6Rx+a preserves finite energy."
+        },
+        {
+          "module": "Towers.NS.EnergyIneq",
+          "theorem": "TheoremaAureum.Towers.NS.HasFiniteEnergy_galilean_boost",
+          "name": "HasFiniteEnergy_galilean_boost",
+          "description": "Galilean boost x\u21a6x+vt preserves finite energy."
+        },
+        {
+          "module": "Towers.NS.EnergyIneq",
+          "theorem": "TheoremaAureum.Towers.NS.HasFiniteEnergy_galilean_group",
+          "name": "HasFiniteEnergy_galilean_group",
+          "description": "Full Galilean group invariance of placeholder finite-energy."
+        },
+        {
+          "module": "Towers.NS.EnergyIneq",
+          "theorem": "TheoremaAureum.Towers.NS.HasFiniteEnergy_of_bounded_zero",
+          "name": "HasFiniteEnergy_of_bounded_zero",
+          "description": "\u2200x, \u2016u\u2080 0 x\u2016 \u2264 M \u2192 HasFiniteEnergy u\u2080."
+        },
+        {
+          "module": "Towers.NS.EnergyIneq",
+          "theorem": "TheoremaAureum.Towers.NS.HasFiniteEnergy_of_smul_bounded",
+          "name": "HasFiniteEnergy_of_smul_bounded",
+          "description": "|f(x)| \u2264 1, |c| \u2264 M \u2192 HasFiniteEnergy (f\u2022c)."
+        },
+        {
+          "module": "Towers.NS.EnergyIneq",
+          "theorem": "TheoremaAureum.Towers.NS.HasFiniteEnergy_parity",
+          "name": "HasFiniteEnergy_parity",
+          "description": "Parity x\u21a6-x preserves finite energy."
+        },
+        {
+          "module": "Towers.NS.EnergyIneq",
+          "theorem": "TheoremaAureum.Towers.NS.HasFiniteEnergy_rotate",
+          "name": "HasFiniteEnergy_rotate",
+          "description": "Rotation by isometry R: x\u21a6Rx preserves finite energy."
+        },
+        {
+          "module": "Towers.NS.EnergyIneq",
+          "theorem": "TheoremaAureum.Towers.NS.HasFiniteEnergy_rotating_frame",
+          "name": "HasFiniteEnergy_rotating_frame",
+          "description": "NS energy / regularity: HasFiniteEnergy rotating frame."
+        },
+        {
+          "module": "Towers.NS.EnergyIneq",
+          "theorem": "TheoremaAureum.Towers.NS.HasFiniteEnergy_spacetime_rigid_motion",
+          "name": "HasFiniteEnergy_spacetime_rigid_motion",
+          "description": "NS energy / regularity: HasFiniteEnergy spacetime rigid motion."
+        },
+        {
+          "module": "Towers.NS.EnergyIneq",
+          "theorem": "TheoremaAureum.Towers.NS.HasFiniteEnergy_time_reverse",
+          "name": "HasFiniteEnergy_time_reverse",
+          "description": "NS energy / regularity: HasFiniteEnergy time reverse."
+        },
+        {
+          "module": "Towers.NS.EnergyIneq",
+          "theorem": "TheoremaAureum.Towers.NS.HasFiniteEnergy_time_reverse_signed",
+          "name": "HasFiniteEnergy_time_reverse_signed",
+          "description": "NS energy / regularity: HasFiniteEnergy time reverse signed."
+        },
+        {
+          "module": "Towers.NS.EnergyIneq",
+          "theorem": "TheoremaAureum.Towers.NS.HasFiniteEnergy_time_translate",
+          "name": "HasFiniteEnergy_time_translate",
+          "description": "Time-shift: \u2200x,\u2016u\u2080 s x\u2016\u2264M \u2192 HasFiniteEnergy(fun t=>u\u2080(t+s))."
+        },
+        {
+          "module": "Towers.NS.EnergyIneq",
+          "theorem": "TheoremaAureum.Towers.NS.HasFiniteEnergy_translate",
+          "name": "HasFiniteEnergy_translate",
+          "description": "Spatial translation: x\u21a6x+a preserves finite energy."
+        },
+        {
+          "module": "Towers.NS.EnergyIneq",
+          "theorem": "TheoremaAureum.Towers.NS.HasFiniteEnergy_zero",
+          "name": "HasFiniteEnergy_zero",
+          "description": "Zero velocity field has finite placeholder energy (M=0)."
+        },
+        {
+          "module": "Towers.NS.Energy",
+          "theorem": "TheoremaAureum.Towers.NS.Energy.energy_decomposition",
+          "name": "energy_decomposition",
+          "description": "NS lemma: energy decomposition."
+        },
+        {
+          "module": "Towers.NS.Energy",
+          "theorem": "TheoremaAureum.Towers.NS.Energy.energy_nonincreasing_flow",
+          "name": "energy_nonincreasing_flow",
+          "description": "NS lemma: energy nonincreasing flow."
+        },
+        {
+          "module": "Towers.NS.Energy",
+          "theorem": "TheoremaAureum.Towers.NS.Energy.finite_energy_persistent",
+          "name": "finite_energy_persistent",
+          "description": "NS lemma: finite energy persistent."
+        },
+        {
+          "module": "Towers.NS.Energy",
+          "theorem": "TheoremaAureum.Towers.NS.Energy.kinetic_energy_def",
+          "name": "kinetic_energy_def",
+          "description": "NS lemma: kinetic energy def."
+        },
+        {
+          "module": "Towers.NS.Energy",
+          "theorem": "TheoremaAureum.Towers.NS.Energy.potential_energy_def",
+          "name": "potential_energy_def",
+          "description": "NS lemma: potential energy def."
+        },
+        {
+          "module": "Towers.NS.EnergyV2",
+          "theorem": "TheoremaAureum.Towers.NS.EnergyV2.BealeKatoMajda_bootstrap",
+          "name": "BealeKatoMajda_bootstrap",
+          "description": "Beale\u2013Kato\u2013Majda blow-up criterion: BealeKatoMajda bootstrap."
+        },
+        {
+          "module": "Towers.NS.EnergyV2",
+          "theorem": "TheoremaAureum.Towers.NS.EnergyV2.BealeKatoMajda_criterion",
+          "name": "BealeKatoMajda_criterion",
+          "description": "Beale\u2013Kato\u2013Majda blow-up criterion: BealeKatoMajda criterion."
+        },
+        {
+          "module": "Towers.NS.EnergyV2",
+          "theorem": "TheoremaAureum.Towers.NS.EnergyV2.BealeKatoMajda_criterion_schema",
+          "name": "BealeKatoMajda_criterion_schema",
+          "description": "Named-Prop NS schema: BealeKatoMajda criterion schema."
+        },
+        {
+          "module": "Towers.NS.EnergyV2",
+          "theorem": "TheoremaAureum.Towers.NS.EnergyV2.BealeKatoMajda_implies_global",
+          "name": "BealeKatoMajda_implies_global",
+          "description": "Beale\u2013Kato\u2013Majda blow-up criterion: BealeKatoMajda implies global."
+        },
+        {
+          "module": "Towers.NS.EnergyV2",
+          "theorem": "TheoremaAureum.Towers.NS.EnergyV2.BKM_implies_strong_L3_bound",
+          "name": "BKM_implies_strong_L3_bound",
+          "description": "Beale\u2013Kato\u2013Majda blow-up criterion: BKM implies strong L3 bound."
+        },
+        {
+          "module": "Towers.NS.EnergyV2",
+          "theorem": "TheoremaAureum.Towers.NS.EnergyV2.blowup_excluded",
+          "name": "blowup_excluded",
+          "description": "NS energy / regularity: blowup excluded."
+        },
+        {
+          "module": "Towers.NS.EnergyV2",
+          "theorem": "TheoremaAureum.Towers.NS.EnergyV2.Blowup_exclusion_small_target",
+          "name": "Blowup_exclusion_small_target",
+          "description": "NS energy / regularity: Blowup exclusion small target."
+        },
+        {
+          "module": "Towers.NS.EnergyV2",
+          "theorem": "TheoremaAureum.Towers.NS.EnergyV2.Conditional_regularity_theorem",
+          "name": "Conditional_regularity_theorem",
+          "description": "NS energy / regularity: Conditional regularity theorem."
+        },
+        {
+          "module": "Towers.NS.EnergyV2",
+          "theorem": "TheoremaAureum.Towers.NS.EnergyV2.Dissipation",
+          "name": "Dissipation",
+          "description": "NS energy / regularity: Dissipation."
+        },
+        {
+          "module": "Towers.NS.EnergyV2",
+          "theorem": "TheoremaAureum.Towers.NS.EnergyV2.Dissipation_nonneg",
+          "name": "Dissipation_nonneg",
+          "description": "NS energy / regularity: Dissipation nonneg."
+        },
+        {
+          "module": "Towers.NS.EnergyV2",
+          "theorem": "TheoremaAureum.Towers.NS.EnergyV2.Dissipation_positive_ae",
+          "name": "Dissipation_positive_ae",
+          "description": "NS energy / regularity: Dissipation positive ae."
+        },
+        {
+          "module": "Towers.NS.EnergyV2",
+          "theorem": "TheoremaAureum.Towers.NS.EnergyV2.Dissipation_real",
+          "name": "Dissipation_real",
+          "description": "NS energy / regularity: Dissipation real."
+        },
+        {
+          "module": "Towers.NS.EnergyV2",
+          "theorem": "TheoremaAureum.Towers.NS.EnergyV2.EnergyDecayBound",
+          "name": "EnergyDecayBound",
+          "description": "NS energy / regularity: EnergyDecayBound."
+        },
+        {
+          "module": "Towers.NS.EnergyV2",
+          "theorem": "TheoremaAureum.Towers.NS.EnergyV2.Energy_decay_exponential",
+          "name": "Energy_decay_exponential",
+          "description": "NS energy / regularity: Energy decay exponential."
+        },
+        {
+          "module": "Towers.NS.EnergyV2",
+          "theorem": "TheoremaAureum.Towers.NS.EnergyV2.Energy_decay_optimal",
+          "name": "Energy_decay_optimal",
+          "description": "NS energy / regularity: Energy decay optimal."
+        },
+        {
+          "module": "Towers.NS.EnergyV2",
+          "theorem": "TheoremaAureum.Towers.NS.EnergyV2.EnergyDissipationIntegral",
+          "name": "EnergyDissipationIntegral",
+          "description": "NS energy / regularity: EnergyDissipationIntegral."
+        },
+        {
+          "module": "Towers.NS.EnergyV2",
+          "theorem": "TheoremaAureum.Towers.NS.EnergyV2.EnergyEnstrophy_interpolation",
+          "name": "EnergyEnstrophy_interpolation",
+          "description": "Enstrophy \u2016\u03c9\u2016\u00b2_L\u00b2 lemma: EnergyEnstrophy interpolation."
+        },
+        {
+          "module": "Towers.NS.EnergyV2",
+          "theorem": "TheoremaAureum.Towers.NS.EnergyV2.Enstrophy",
+          "name": "Enstrophy",
+          "description": "Enstrophy \u2016\u03c9\u2016\u00b2_L\u00b2 lemma: Enstrophy."
+        },
+        {
+          "module": "Towers.NS.EnergyV2",
+          "theorem": "TheoremaAureum.Towers.NS.EnergyV2.EnstrophyBalance",
+          "name": "EnstrophyBalance",
+          "description": "Enstrophy \u2016\u03c9\u2016\u00b2_L\u00b2 lemma: EnstrophyBalance."
+        },
+        {
+          "module": "Towers.NS.EnergyV2",
+          "theorem": "TheoremaAureum.Towers.NS.EnergyV2.enstrophy_bootstrap_lemma",
+          "name": "enstrophy_bootstrap_lemma",
+          "description": "NS energy / regularity: enstrophy bootstrap lemma."
+        },
+        {
+          "module": "Towers.NS.EnergyV2",
+          "theorem": "TheoremaAureum.Towers.NS.EnergyV2.enstrophy_bootstrap_strong",
+          "name": "enstrophy_bootstrap_strong",
+          "description": "NS energy / regularity: enstrophy bootstrap strong."
+        },
+        {
+          "module": "Towers.NS.EnergyV2",
+          "theorem": "TheoremaAureum.Towers.NS.EnergyV2.enstrophy_bound_from_Ladyzhenskaya",
+          "name": "enstrophy_bound_from_Ladyzhenskaya",
+          "description": "NS energy / regularity: enstrophy bound from Ladyzhenskaya."
+        },
+        {
+          "module": "Towers.NS.EnergyV2",
+          "theorem": "TheoremaAureum.Towers.NS.EnergyV2.Enstrophy_bound_from_small_data",
+          "name": "Enstrophy_bound_from_small_data",
+          "description": "Enstrophy \u2016\u03c9\u2016\u00b2_L\u00b2 lemma: Enstrophy bound from small data."
+        },
+        {
+          "module": "Towers.NS.EnergyV2",
+          "theorem": "TheoremaAureum.Towers.NS.EnergyV2.enstrophy_bound_global",
+          "name": "enstrophy_bound_global",
+          "description": "NS energy / regularity: enstrophy bound global."
+        },
+        {
+          "module": "Towers.NS.EnergyV2",
+          "theorem": "TheoremaAureum.Towers.NS.EnergyV2.Enstrophy_bound_global",
+          "name": "Enstrophy_bound_global",
+          "description": "Enstrophy \u2016\u03c9\u2016\u00b2_L\u00b2 lemma: Enstrophy bound global."
+        },
+        {
+          "module": "Towers.NS.EnergyV2",
+          "theorem": "TheoremaAureum.Towers.NS.EnergyV2.Enstrophy_bound_unconditional",
+          "name": "Enstrophy_bound_unconditional",
+          "description": "Enstrophy \u2016\u03c9\u2016\u00b2_L\u00b2 lemma: Enstrophy bound unconditional."
+        },
+        {
+          "module": "Towers.NS.EnergyV2",
+          "theorem": "TheoremaAureum.Towers.NS.EnergyV2.Enstrophy_critical_bound",
+          "name": "Enstrophy_critical_bound",
+          "description": "Enstrophy \u2016\u03c9\u2016\u00b2_L\u00b2 lemma: Enstrophy critical bound."
+        },
+        {
+          "module": "Towers.NS.EnergyV2",
+          "theorem": "TheoremaAureum.Towers.NS.EnergyV2.enstrophy_differential_inequality",
+          "name": "enstrophy_differential_inequality",
+          "description": "NS energy / regularity: enstrophy differential inequality."
+        },
+        {
+          "module": "Towers.NS.EnergyV2",
+          "theorem": "TheoremaAureum.Towers.NS.EnergyV2.enstrophy_differential_inequality_conditional",
+          "name": "enstrophy_differential_inequality_conditional",
+          "description": "NS energy / regularity: enstrophy differential inequality conditional."
+        },
+        {
+          "module": "Towers.NS.EnergyV2",
+          "theorem": "TheoremaAureum.Towers.NS.EnergyV2.Global_regularity_proven",
+          "name": "Global_regularity_proven",
+          "description": "NS energy / regularity: Global regularity proven."
+        },
+        {
+          "module": "Towers.NS.EnergyV2",
+          "theorem": "TheoremaAureum.Towers.NS.EnergyV2.Global_scheme_for_all_data",
+          "name": "Global_scheme_for_all_data",
+          "description": "NS energy / regularity: Global scheme for all data."
+        },
+        {
+          "module": "Towers.NS.EnergyV2",
+          "theorem": "TheoremaAureum.Towers.NS.EnergyV2.H1Norm_real",
+          "name": "H1Norm_real",
+          "description": "NS energy / regularity: H1Norm real."
+        },
+        {
+          "module": "Towers.NS.EnergyV2",
+          "theorem": "TheoremaAureum.Towers.NS.EnergyV2.H1Norm_v2",
+          "name": "H1Norm_v2",
+          "description": "NS energy / regularity: H1Norm v2."
+        },
+        {
+          "module": "Towers.NS.EnergyV2",
+          "theorem": "TheoremaAureum.Towers.NS.EnergyV2.L3_critical_bound_bootstrap",
+          "name": "L3_critical_bound_bootstrap",
+          "description": "NS energy / regularity: L3 critical bound bootstrap."
+        },
+        {
+          "module": "Towers.NS.EnergyV2",
+          "theorem": "TheoremaAureum.Towers.NS.EnergyV2.Ladyzhenskaya_4D_sharp",
+          "name": "Ladyzhenskaya_4D_sharp",
+          "description": "NS energy / regularity: Ladyzhenskaya 4D sharp."
+        },
+        {
+          "module": "Towers.NS.EnergyV2",
+          "theorem": "TheoremaAureum.Towers.NS.EnergyV2.Ladyzhenskaya_bound_refined_4D",
+          "name": "Ladyzhenskaya_bound_refined_4D",
+          "description": "NS energy / regularity: Ladyzhenskaya bound refined 4D."
+        },
+        {
+          "module": "Towers.NS.EnergyV2",
+          "theorem": "TheoremaAureum.Towers.NS.EnergyV2.Ladyzhenskaya_inequality",
+          "name": "Ladyzhenskaya_inequality",
+          "description": "NS energy / regularity: Ladyzhenskaya inequality."
+        },
+        {
+          "module": "Towers.NS.EnergyV2",
+          "theorem": "TheoremaAureum.Towers.NS.EnergyV2.LerayEnergyIneq_real",
+          "name": "LerayEnergyIneq_real",
+          "description": "Leray\u2013Hopf energy inequality: LerayEnergyIneq real."
+        },
+        {
+          "module": "Towers.NS.EnergyV2",
+          "theorem": "TheoremaAureum.Towers.NS.EnergyV2.LerayHopf_unique",
+          "name": "LerayHopf_unique",
+          "description": "Leray\u2013Hopf energy inequality: LerayHopf unique."
+        },
+        {
+          "module": "Towers.NS.EnergyV2",
+          "theorem": "TheoremaAureum.Towers.NS.EnergyV2.LerayHopf_weak_solution_exists",
+          "name": "LerayHopf_weak_solution_exists",
+          "description": "Leray\u2013Hopf energy inequality: LerayHopf weak solution exists."
+        },
+        {
+          "module": "Towers.NS.EnergyV2",
+          "theorem": "TheoremaAureum.Towers.NS.EnergyV2.NavierStokes_global_regular",
+          "name": "NavierStokes_global_regular",
+          "description": "NS energy / regularity: NavierStokes global regular."
+        },
+        {
+          "module": "Towers.NS.EnergyV2",
+          "theorem": "TheoremaAureum.Towers.NS.EnergyV2.NavierStokes_global_regular_promotion",
+          "name": "NavierStokes_global_regular_promotion",
+          "description": "NS energy / regularity: NavierStokes global regular promotion."
+        },
+        {
+          "module": "Towers.NS.EnergyV2",
+          "theorem": "TheoremaAureum.Towers.NS.EnergyV2.NavierStokes_global_regular_promotion_v2",
+          "name": "NavierStokes_global_regular_promotion_v2",
+          "description": "NS energy / regularity: NavierStokes global regular promotion v2."
+        },
+        {
+          "module": "Towers.NS.EnergyV2",
+          "theorem": "TheoremaAureum.Towers.NS.EnergyV2.Serrin_criterion_L3",
+          "name": "Serrin_criterion_L3",
+          "description": "NS energy / regularity: Serrin criterion L3."
+        },
+        {
+          "module": "Towers.NS.EnergyV2",
+          "theorem": "TheoremaAureum.Towers.NS.EnergyV2.SmallDataGlobal_nonzero",
+          "name": "SmallDataGlobal_nonzero",
+          "description": "NS energy / regularity: SmallDataGlobal nonzero."
+        },
+        {
+          "module": "Towers.NS.EnergyV2",
+          "theorem": "TheoremaAureum.Towers.NS.EnergyV2.SmallDataGlobal_proven",
+          "name": "SmallDataGlobal_proven",
+          "description": "NS energy / regularity: SmallDataGlobal proven."
+        },
+        {
+          "module": "Towers.NS.EnergyV2",
+          "theorem": "TheoremaAureum.Towers.NS.EnergyV2.SmallDataGlobal_schema",
+          "name": "SmallDataGlobal_schema",
+          "description": "Named-Prop NS schema: SmallDataGlobal schema."
+        },
+        {
+          "module": "Towers.NS.EnergyV2",
+          "theorem": "TheoremaAureum.Towers.NS.EnergyV2.ViscosityScaling",
+          "name": "ViscosityScaling",
+          "description": "NS energy / regularity: ViscosityScaling."
+        },
+        {
+          "module": "Towers.NS.EnergyV2",
+          "theorem": "TheoremaAureum.Towers.NS.EnergyV2.vorticity_equation_L2_energy_bound",
+          "name": "vorticity_equation_L2_energy_bound",
+          "description": "NS energy / regularity: vorticity equation L2 energy bound."
+        },
+        {
+          "module": "Towers.NS.EnergyV2",
+          "theorem": "TheoremaAureum.Towers.NS.EnergyV2.vorticity_L2_energy_identity",
+          "name": "vorticity_L2_energy_identity",
+          "description": "NS energy / regularity: vorticity L2 energy identity."
+        },
+        {
+          "module": "Towers.NS.RealH1Norm",
+          "theorem": "TheoremaAureum.Towers.NS.RealH1Norm.frobNormSq_nonneg",
+          "name": "frobNormSq_nonneg",
+          "description": "NS lemma: frobNormSq nonneg."
+        },
+        {
+          "module": "Towers.NS.RealH1Norm",
+          "theorem": "TheoremaAureum.Towers.NS.RealH1Norm.H1NormReal_nonneg",
+          "name": "H1NormReal_nonneg",
+          "description": "NS lemma: H1NormReal nonneg."
+        },
+        {
+          "module": "Towers.NS.RealH1Norm",
+          "theorem": "TheoremaAureum.Towers.NS.RealH1Norm.H1NormReal_zero_eq_zero",
+          "name": "H1NormReal_zero_eq_zero",
+          "description": "NS lemma: H1NormReal zero eq zero."
+        }
+      ]
+    },
+    {
+      "id": "Towers.Spectral",
+      "label": "Spectral \u2014 Operator Theory Tower",
+      "color": "#f59e0b",
+      "open_surface": "YM Surface #1",
+      "count": 55,
+      "bricks": [
+        {
+          "module": "Towers.Spectral.Operator",
+          "theorem": "TheoremaAureum.Towers.Spectral.Hamiltonian_operator_def",
+          "name": "Hamiltonian_operator_def",
+          "description": "Spectral lemma: Hamiltonian operator def."
+        },
+        {
+          "module": "Towers.Spectral.Operator",
+          "theorem": "TheoremaAureum.Towers.Spectral.MassGap_def",
+          "name": "MassGap_def",
+          "description": "Spectral lemma: MassGap def."
+        },
+        {
+          "module": "Towers.Spectral.Operator",
+          "theorem": "TheoremaAureum.Towers.Spectral.mass_gap_pos_means_spectrum_gap",
+          "name": "mass_gap_pos_means_spectrum_gap",
+          "description": "Spectral lemma: mass gap pos means spectrum gap."
+        },
+        {
+          "module": "Towers.Spectral.Operator",
+          "theorem": "TheoremaAureum.Towers.Spectral.vacuum_is_eigenstate",
+          "name": "vacuum_is_eigenstate",
+          "description": "Spectral lemma: vacuum is eigenstate."
+        },
+        {
+          "module": "Towers.Spectral.Operator",
+          "theorem": "TheoremaAureum.Towers.Spectral.vacuum_state_def",
+          "name": "vacuum_state_def",
+          "description": "Spectral lemma: vacuum state def."
+        },
+        {
+          "module": "Towers.Spectral.OperatorV2",
+          "theorem": "TheoremaAureum.Towers.Spectral.OperatorV2.continuum_limit_exists",
+          "name": "continuum_limit_exists",
+          "description": "Spectral schema / combinator: continuum limit exists."
+        },
+        {
+          "module": "Towers.Spectral.OperatorV2",
+          "theorem": "TheoremaAureum.Towers.Spectral.OperatorV2.essential_spectrum_empty_schema",
+          "name": "essential_spectrum_empty_schema",
+          "description": "Named-Prop: \u03c3_ess(H) = \u2205."
+        },
+        {
+          "module": "Towers.Spectral.OperatorV2",
+          "theorem": "TheoremaAureum.Towers.Spectral.OperatorV2.essential_spectrum_empty_toy",
+          "name": "essential_spectrum_empty_toy",
+          "description": "\u03c3_ess(H\u2080) = \u2205 on Fin 0 (vacuous; fails on Fin(n+1))."
+        },
+        {
+          "module": "Towers.Spectral.OperatorV2",
+          "theorem": "TheoremaAureum.Towers.Spectral.OperatorV2.first_excitation_continuum",
+          "name": "first_excitation_continuum",
+          "description": "Spectral schema / combinator: first excitation continuum."
+        },
+        {
+          "module": "Towers.Spectral.OperatorV2",
+          "theorem": "TheoremaAureum.Towers.Spectral.OperatorV2.first_excitation_explicit",
+          "name": "first_excitation_explicit",
+          "description": "Noncomputable standard basis e\u2080 on Fin(n+1) as first excitation."
+        },
+        {
+          "module": "Towers.Spectral.OperatorV2",
+          "theorem": "TheoremaAureum.Towers.Spectral.OperatorV2.first_excitation_lower_bound",
+          "name": "first_excitation_lower_bound",
+          "description": "First excitation energy \u03bc\u2081 \u2265 \u0394 (mass gap witness)."
+        },
+        {
+          "module": "Towers.Spectral.OperatorV2",
+          "theorem": "TheoremaAureum.Towers.Spectral.OperatorV2.first_excited_state_exists",
+          "name": "first_excited_state_exists",
+          "description": "Non-vacuum unit vector \u22a5 vacuum exists (combinator; FALSE on Fin 0)."
+        },
+        {
+          "module": "Towers.Spectral.OperatorV2",
+          "theorem": "TheoremaAureum.Towers.Spectral.OperatorV2.gap_equals_\u03bc",
+          "name": "gap_equals_\u03bc",
+          "description": "MassGap H \u0394 \u2194 (0<\u0394 \u2227 \u2200A\u2260vacuum, \u0394 \u2264 |HA\u2212Hvacuum|) \u2014 Iff.rfl."
+        },
+        {
+          "module": "Towers.Spectral.OperatorV2",
+          "theorem": "TheoremaAureum.Towers.Spectral.OperatorV2.gap_stability_under_limit",
+          "name": "gap_stability_under_limit",
+          "description": "Spectral schema / combinator: gap stability under limit."
+        },
+        {
+          "module": "Towers.Spectral.OperatorV2",
+          "theorem": "TheoremaAureum.Towers.Spectral.OperatorV2.gap_uniform_in_Lambda",
+          "name": "gap_uniform_in_Lambda",
+          "description": "Spectral schema / combinator: gap uniform in Lambda."
+        },
+        {
+          "module": "Towers.Spectral.OperatorV2",
+          "theorem": "TheoremaAureum.Towers.Spectral.OperatorV2.gap_uniform_in_Lambda_v2",
+          "name": "gap_uniform_in_Lambda_v2",
+          "description": "Spectral schema / combinator: gap uniform in Lambda v2."
+        },
+        {
+          "module": "Towers.Spectral.OperatorV2",
+          "theorem": "TheoremaAureum.Towers.Spectral.OperatorV2.Hamiltonian_compact_resolvent_schema",
+          "name": "Hamiltonian_compact_resolvent_schema",
+          "description": "Named-Prop: (H+\u03bb)\u207b\u00b9 compact \u2014 prerequisite for discrete spectrum."
+        },
+        {
+          "module": "Towers.Spectral.OperatorV2",
+          "theorem": "TheoremaAureum.Towers.Spectral.OperatorV2.Hamiltonian_compact_resolvent_toy",
+          "name": "Hamiltonian_compact_resolvent_toy",
+          "description": "(H\u2080+\u03bb)\u207b\u00b9 compact on EuclideanSpace \u211d (Fin n), N=0."
+        },
+        {
+          "module": "Towers.Spectral.OperatorV2",
+          "theorem": "TheoremaAureum.Towers.Spectral.OperatorV2.Hamiltonian_discrete_spectrum_from_compact_resolvent",
+          "name": "Hamiltonian_discrete_spectrum_from_compact_resolvent",
+          "description": "Compact resolvent + empty ess. spectrum \u2192 discrete spectrum."
+        },
+        {
+          "module": "Towers.Spectral.OperatorV2",
+          "theorem": "TheoremaAureum.Towers.Spectral.OperatorV2.Hamiltonian_IR_gap_uniform",
+          "name": "Hamiltonian_IR_gap_uniform",
+          "description": "Spectral schema / combinator: Hamiltonian IR gap uniform."
+        },
+        {
+          "module": "Towers.Spectral.OperatorV2",
+          "theorem": "TheoremaAureum.Towers.Spectral.OperatorV2.Hamiltonian_IR_regularized",
+          "name": "Hamiltonian_IR_regularized",
+          "description": "Spectral schema / combinator: Hamiltonian IR regularized."
+        },
+        {
+          "module": "Towers.Spectral.OperatorV2",
+          "theorem": "TheoremaAureum.Towers.Spectral.OperatorV2.Hamiltonian_mass_gap_toy",
+          "name": "Hamiltonian_mass_gap_toy",
+          "description": "Toy mass gap: \u2203 \u0394>0, MassGap H\u2080 \u0394 on Fin 0."
+        },
+        {
+          "module": "Towers.Spectral.OperatorV2",
+          "theorem": "TheoremaAureum.Towers.Spectral.OperatorV2.Hamiltonian_operator_v2",
+          "name": "Hamiltonian_operator_v2",
+          "description": "Spectral schema / combinator: Hamiltonian operator v2."
+        },
+        {
+          "module": "Towers.Spectral.OperatorV2",
+          "theorem": "TheoremaAureum.Towers.Spectral.OperatorV2.Hamiltonian_psd",
+          "name": "Hamiltonian_psd",
+          "description": "Placeholder YM Hamiltonian is PSD: \u27e8\u03c8,H\u03c8\u27e9 \u2265 0."
+        },
+        {
+          "module": "Towers.Spectral.OperatorV2",
+          "theorem": "TheoremaAureum.Towers.Spectral.OperatorV2.Hamiltonian_spectrum_toy",
+          "name": "Hamiltonian_spectrum_toy",
+          "description": "Toy spectrum: \u03c3(H\u2080) on Fin 0 = {0}."
+        },
+        {
+          "module": "Towers.Spectral.OperatorV2",
+          "theorem": "TheoremaAureum.Towers.Spectral.OperatorV2.Hamiltonian_symmetric",
+          "name": "Hamiltonian_symmetric",
+          "description": "Placeholder YM Hamiltonian is symmetric on EuclideanSpace \u2102 (Fin 3)."
+        },
+        {
+          "module": "Towers.Spectral.OperatorV2",
+          "theorem": "TheoremaAureum.Towers.Spectral.OperatorV2.InfraredCutoff_\u039b",
+          "name": "InfraredCutoff_\u039b",
+          "description": "Spectral schema / combinator: InfraredCutoff \u039b."
+        },
+        {
+          "module": "Towers.Spectral.OperatorV2",
+          "theorem": "TheoremaAureum.Towers.Spectral.OperatorV2.IR_cutoff_gap_estimate",
+          "name": "IR_cutoff_gap_estimate",
+          "description": "Spectral schema / combinator: IR cutoff gap estimate."
+        },
+        {
+          "module": "Towers.Spectral.OperatorV2",
+          "theorem": "TheoremaAureum.Towers.Spectral.OperatorV2.IR_cutoff_gap_estimate_v2",
+          "name": "IR_cutoff_gap_estimate_v2",
+          "description": "Spectral schema / combinator: IR cutoff gap estimate v2."
+        },
+        {
+          "module": "Towers.Spectral.OperatorV2",
+          "theorem": "TheoremaAureum.Towers.Spectral.OperatorV2.IR_gap_lower_bound_explicit",
+          "name": "IR_gap_lower_bound_explicit",
+          "description": "Spectral schema / combinator: IR gap lower bound explicit."
+        },
+        {
+          "module": "Towers.Spectral.OperatorV2",
+          "theorem": "TheoremaAureum.Towers.Spectral.OperatorV2.IR_removal_limit_schema",
+          "name": "IR_removal_limit_schema",
+          "description": "Spectral schema / combinator: IR removal limit schema."
+        },
+        {
+          "module": "Towers.Spectral.OperatorV2",
+          "theorem": "TheoremaAureum.Towers.Spectral.OperatorV2.lower_bound_from_psd",
+          "name": "lower_bound_from_psd",
+          "description": "PSD lower bound on H gives spectral-gap lower bound (min-max)."
+        },
+        {
+          "module": "Towers.Spectral.OperatorV2",
+          "theorem": "TheoremaAureum.Towers.Spectral.OperatorV2.MassGap_continuum",
+          "name": "MassGap_continuum",
+          "description": "Spectral schema / combinator: MassGap continuum."
+        },
+        {
+          "module": "Towers.Spectral.OperatorV2",
+          "theorem": "TheoremaAureum.Towers.Spectral.OperatorV2.MassGap_exists_diagonal",
+          "name": "MassGap_exists_diagonal",
+          "description": "\u2203 \u0394>0, MassGap H \u0394 on diagonal Hamiltonian schema."
+        },
+        {
+          "module": "Towers.Spectral.OperatorV2",
+          "theorem": "TheoremaAureum.Towers.Spectral.OperatorV2.MassGap_from_discrete_spectrum",
+          "name": "MassGap_from_discrete_spectrum",
+          "description": "\u03c3_ess=\u2205 + compact resolvent \u2192 \u2203 \u0394>0, MassGap H \u0394 (combinator)."
+        },
+        {
+          "module": "Towers.Spectral.OperatorV2",
+          "theorem": "TheoremaAureum.Towers.Spectral.OperatorV2.mass_gap_from_lower_bound",
+          "name": "mass_gap_from_lower_bound",
+          "description": "inf \u03c3(H) \u2265 \u0394 > 0 \u2192 mass gap \u2265 \u0394 (combinator)."
+        },
+        {
+          "module": "Towers.Spectral.OperatorV2",
+          "theorem": "TheoremaAureum.Towers.Spectral.OperatorV2.MassGap_IR",
+          "name": "MassGap_IR",
+          "description": "Spectral schema / combinator: MassGap IR."
+        },
+        {
+          "module": "Towers.Spectral.OperatorV2",
+          "theorem": "TheoremaAureum.Towers.Spectral.OperatorV2.MassGap_persists_under_limit_schema",
+          "name": "MassGap_persists_under_limit_schema",
+          "description": "Spectral schema / combinator: MassGap persists under limit schema."
+        },
+        {
+          "module": "Towers.Spectral.OperatorV2",
+          "theorem": "TheoremaAureum.Towers.Spectral.OperatorV2.MassGap_toy_exists",
+          "name": "MassGap_toy_exists",
+          "description": "\u2203 H, \u2203 \u03bc>0, MassGap H \u03bc on Fin 0."
+        },
+        {
+          "module": "Towers.Spectral.OperatorV2",
+          "theorem": "TheoremaAureum.Towers.Spectral.OperatorV2.MassGap_toy_proven",
+          "name": "MassGap_toy_proven",
+          "description": "\u2203 \u03bc>0, MassGap (H_op 0) \u03bc \u2014 first fully-\u2203 witness (vacuous Fin 0)."
+        },
+        {
+          "module": "Towers.Spectral.OperatorV2",
+          "theorem": "TheoremaAureum.Towers.Spectral.OperatorV2.MassGap_YM_operator",
+          "name": "MassGap_YM_operator",
+          "description": "Spectral schema / combinator: MassGap YM operator."
+        },
+        {
+          "module": "Towers.Spectral.OperatorV2",
+          "theorem": "TheoremaAureum.Towers.Spectral.OperatorV2.MassGap_YM_operator_promotion",
+          "name": "MassGap_YM_operator_promotion",
+          "description": "Spectral schema / combinator: MassGap YM operator promotion."
+        },
+        {
+          "module": "Towers.Spectral.OperatorV2",
+          "theorem": "TheoremaAureum.Towers.Spectral.OperatorV2.MassGap_YM_operator_promotion_v2",
+          "name": "MassGap_YM_operator_promotion_v2",
+          "description": "Spectral schema / combinator: MassGap YM operator promotion v2."
+        },
+        {
+          "module": "Towers.Spectral.OperatorV2",
+          "theorem": "TheoremaAureum.Towers.Spectral.OperatorV2.minimax_characterization_\u03bc",
+          "name": "minimax_characterization_\u03bc",
+          "description": "\u03bc = inf{\u27e8\u03c8,H\u03c8\u27e9 : \u03c8\u22a5vacuum, \u2016\u03c8\u2016=1} (minimax)."
+        },
+        {
+          "module": "Towers.Spectral.OperatorV2",
+          "theorem": "TheoremaAureum.Towers.Spectral.OperatorV2.minimax_\u03bc_equals_gap",
+          "name": "minimax_\u03bc_equals_gap",
+          "description": "\u03bc equals mass gap \u0394: conjunction projection of MassGap."
+        },
+        {
+          "module": "Towers.Spectral.OperatorV2",
+          "theorem": "TheoremaAureum.Towers.Spectral.OperatorV2.Neumann_eigenvalue_bound_\u039b",
+          "name": "Neumann_eigenvalue_bound_\u039b",
+          "description": "Spectral schema / combinator: Neumann eigenvalue bound \u039b."
+        },
+        {
+          "module": "Towers.Spectral.OperatorV2",
+          "theorem": "TheoremaAureum.Towers.Spectral.OperatorV2.Neumann_eigenvalue_lower_bound_\u039b",
+          "name": "Neumann_eigenvalue_lower_bound_\u039b",
+          "description": "Spectral schema / combinator: Neumann eigenvalue lower bound \u039b."
+        },
+        {
+          "module": "Towers.Spectral.OperatorV2",
+          "theorem": "TheoremaAureum.Towers.Spectral.OperatorV2.Poincare_inequality_IR_lattice",
+          "name": "Poincare_inequality_IR_lattice",
+          "description": "Spectral schema / combinator: Poincare inequality IR lattice."
+        },
+        {
+          "module": "Towers.Spectral.OperatorV2",
+          "theorem": "TheoremaAureum.Towers.Spectral.OperatorV2.Poincare_inequality_IR_lattice_v2",
+          "name": "Poincare_inequality_IR_lattice_v2",
+          "description": "Spectral schema / combinator: Poincare inequality IR lattice v2."
+        },
+        {
+          "module": "Towers.Spectral.OperatorV2",
+          "theorem": "TheoremaAureum.Towers.Spectral.OperatorV2.spectrum_above_gap_continuous",
+          "name": "spectrum_above_gap_continuous",
+          "description": "Spectral schema / combinator: spectrum above gap continuous."
+        },
+        {
+          "module": "Towers.Spectral.OperatorV2",
+          "theorem": "TheoremaAureum.Towers.Spectral.OperatorV2.spectrum_discrete_below_2\u0394",
+          "name": "spectrum_discrete_below_2\u0394",
+          "description": "Spectral schema / combinator: spectrum discrete below 2\u0394."
+        },
+        {
+          "module": "Towers.Spectral.OperatorV2",
+          "theorem": "TheoremaAureum.Towers.Spectral.OperatorV2.strong_resolvent_convergence",
+          "name": "strong_resolvent_convergence",
+          "description": "Spectral schema / combinator: strong resolvent convergence."
+        },
+        {
+          "module": "Towers.Spectral.OperatorV2",
+          "theorem": "TheoremaAureum.Towers.Spectral.OperatorV2.vacuum_is_ground_state",
+          "name": "vacuum_is_ground_state",
+          "description": "Vacuum is ground state: H(vacuum) \u2264 H(A) for all A."
+        },
+        {
+          "module": "Towers.Spectral.OperatorV2",
+          "theorem": "TheoremaAureum.Towers.Spectral.OperatorV2.vacuum_spectral_gap_corollary",
+          "name": "vacuum_spectral_gap_corollary",
+          "description": "Corollary: vacuum has spectral gap in toy model."
+        },
+        {
+          "module": "Towers.Spectral.OperatorV2",
+          "theorem": "TheoremaAureum.Towers.Spectral.OperatorV2.vacuum_unique_of_kernel_one_dim",
+          "name": "vacuum_unique_of_kernel_one_dim",
+          "description": "ker(H) 1-dimensional \u2192 vacuum unique up to phase."
+        }
+      ]
+    },
+    {
+      "id": "Towers.YM",
+      "label": "YM \u2014 Yang\u2013Mills Tower",
+      "color": "#ef4444",
+      "open_surface": "YM Surface #1",
+      "count": 521,
+      "bricks": [
+        {
+          "module": "Towers.YM.AnalyticContinuationCore",
+          "theorem": "TheoremaAureum.Towers.YM.OS.exp_neg_continues",
+          "name": "exp_neg_continues",
+          "description": "YM lemma: exp neg continues."
+        },
+        {
+          "module": "Towers.YM.BDP_PhaseReversal",
+          "theorem": "TheoremaAureum.BDP.Cert_fails_at_291",
+          "name": "Cert_fails_at_291",
+          "description": "Bridge test fails at threshold 291."
+        },
+        {
+          "module": "Towers.YM.BDP_PhaseReversal",
+          "theorem": "TheoremaAureum.BDP.Cert_lemma2",
+          "name": "Cert_lemma2",
+          "description": "BDP digit-extraction arithmetic lemma 2."
+        },
+        {
+          "module": "Towers.YM.BDP_PhaseReversal",
+          "theorem": "TheoremaAureum.BDP.Cert_llm_trunc",
+          "name": "Cert_llm_trunc",
+          "description": "LLM truncation error cert at 30-digit Machin \u03c0."
+        },
+        {
+          "module": "Towers.YM.BDP_PhaseReversal",
+          "theorem": "TheoremaAureum.BDP.Cert_m_boundary",
+          "name": "Cert_m_boundary",
+          "description": "BDP m-boundary mass certificate."
+        },
+        {
+          "module": "Towers.YM.BDP_PhaseReversal",
+          "theorem": "TheoremaAureum.BDP.Cert_phase_reversal",
+          "name": "Cert_phase_reversal",
+          "description": "Phase reversal P5: \u03c7(1/p\u2085)=13 < \u03c7(fracDist p\u2085)=14."
+        },
+        {
+          "module": "Towers.YM.BrydgesFederbush_D1D3",
+          "theorem": "TheoremaAureum.Towers.YM.BrydgesFederbush.geometric_activity_bound",
+          "name": "geometric_activity_bound",
+          "description": "YM lemma: geometric activity bound."
+        },
+        {
+          "module": "Towers.YM.BrydgesFederbush_D1D3",
+          "theorem": "TheoremaAureum.Towers.YM.BrydgesFederbush.kp_summable",
+          "name": "kp_summable",
+          "description": "YM lemma: kp summable."
+        },
+        {
+          "module": "Towers.YM.BrydgesFederbush_D1D3",
+          "theorem": "TheoremaAureum.Towers.YM.BrydgesFederbush.peierls_branching_bound",
+          "name": "peierls_branching_bound",
+          "description": "YM lemma: peierls branching bound."
+        },
+        {
+          "module": "Towers.YM.BrydgesFederbush_D5",
+          "theorem": "TheoremaAureum.Towers.YM.BrydgesFederbush.d5a_closed",
+          "name": "d5a_closed",
+          "description": "YM lemma: d5a closed."
+        },
+        {
+          "module": "Towers.YM.BrydgesFederbush_D5",
+          "theorem": "TheoremaAureum.Towers.YM.BrydgesFederbush.w1_seven_pos_Surface",
+          "name": "w1_seven_pos_Surface",
+          "description": "YM lemma: w1 seven pos Surface."
+        },
+        {
+          "module": "Towers.YM.Casimir",
+          "theorem": "TheoremaAureum.Towers.YM.Casimir.Casimir_SU3_explicit_real_ge_quadratic",
+          "name": "Casimir_SU3_explicit_real_ge_quadratic",
+          "description": "YM lemma: Casimir SU3 explicit real ge quadratic."
+        },
+        {
+          "module": "Towers.YM.CloverF",
+          "theorem": "TheoremaAureum.Towers.YM.CloverF.cloverF_antisymmetric",
+          "name": "cloverF_antisymmetric",
+          "description": "YM lemma: cloverF antisymmetric."
+        },
+        {
+          "module": "Towers.YM.CloverF",
+          "theorem": "TheoremaAureum.Towers.YM.CloverF.cloverF_diagonal_zero",
+          "name": "cloverF_diagonal_zero",
+          "description": "YM lemma: cloverF diagonal zero."
+        },
+        {
+          "module": "Towers.YM.CloverF",
+          "theorem": "TheoremaAureum.Towers.YM.CloverF.cloverF_trivial_eq_zero",
+          "name": "cloverF_trivial_eq_zero",
+          "description": "YM lemma: cloverF trivial eq zero."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Base_case_discharge",
+          "name": "Base_case_discharge",
+          "description": "YM lemma: Base case discharge."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Base_case_K_one",
+          "name": "Base_case_K_one",
+          "description": "YM lemma: Base case K one."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Brydges_Federbush_lemma",
+          "name": "Brydges_Federbush_lemma",
+          "description": "YM lemma: Brydges Federbush lemma."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Brydges_Federbush_lemma_exp",
+          "name": "Brydges_Federbush_lemma_exp",
+          "description": "YM lemma: Brydges Federbush lemma exp."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Casimir_eigenvalue_nonneg",
+          "name": "Casimir_eigenvalue_nonneg",
+          "description": "YM lemma: Casimir eigenvalue nonneg."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Casimir_eigenvalue_SU3",
+          "name": "Casimir_eigenvalue_SU3",
+          "description": "YM lemma: Casimir eigenvalue SU3."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Casimir_SU3_eq_three",
+          "name": "Casimir_SU3_eq_three",
+          "description": "YM lemma: Casimir SU3 eq three."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Casimir_SU3_explicit_at_fundamental",
+          "name": "Casimir_SU3_explicit_at_fundamental",
+          "description": "YM lemma: Casimir SU3 explicit at fundamental."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Casimir_SU3_explicit_at_zero",
+          "name": "Casimir_SU3_explicit_at_zero",
+          "description": "YM lemma: Casimir SU3 explicit at zero."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Casimir_SU3_explicit_nonneg",
+          "name": "Casimir_SU3_explicit_nonneg",
+          "description": "YM lemma: Casimir SU3 explicit nonneg."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Casimir_SU3_pos",
+          "name": "Casimir_SU3_pos",
+          "description": "YM lemma: Casimir SU3 pos."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Character_def_zero",
+          "name": "Character_def_zero",
+          "description": "YM lemma: Character def zero."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Character_orthogonality",
+          "name": "Character_orthogonality",
+          "description": "YM lemma: Character orthogonality."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Cluster_convergence_radius",
+          "name": "Cluster_convergence_radius",
+          "description": "YM lemma: Cluster convergence radius."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Cluster_estimate_base",
+          "name": "Cluster_estimate_base",
+          "description": "YM lemma: Cluster estimate base."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Cluster_expansion_step_eq_Wilson",
+          "name": "Cluster_expansion_step_eq_Wilson",
+          "description": "YM lemma: Cluster expansion step eq Wilson."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Cluster_expansion_step_zero",
+          "name": "Cluster_expansion_step_zero",
+          "description": "YM lemma: Cluster expansion step zero."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.cluster_exp_bound",
+          "name": "cluster_exp_bound",
+          "description": "YM lemma: cluster exp bound."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.cluster_exp_bound_pos",
+          "name": "cluster_exp_bound_pos",
+          "description": "YM lemma: cluster exp bound pos."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Combinatorial_constant_e",
+          "name": "Combinatorial_constant_e",
+          "description": "YM lemma: Combinatorial constant e."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Combinatorial_constant_e_one_le",
+          "name": "Combinatorial_constant_e_one_le",
+          "description": "YM lemma: Combinatorial constant e one le."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Combinatorial_constant_e_pos",
+          "name": "Combinatorial_constant_e_pos",
+          "description": "YM lemma: Combinatorial constant e pos."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Combinatorial_constant_e_real",
+          "name": "Combinatorial_constant_e_real",
+          "description": "YM lemma: Combinatorial constant e real."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Combinatorial_constant_e_real_def",
+          "name": "Combinatorial_constant_e_real_def",
+          "description": "YM lemma: Combinatorial constant e real def."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Combinatorial_constant_e_real_eq_e",
+          "name": "Combinatorial_constant_e_real_eq_e",
+          "description": "YM lemma: Combinatorial constant e real eq e."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Combinatorial_constant_e_real_one_le",
+          "name": "Combinatorial_constant_e_real_one_le",
+          "description": "YM lemma: Combinatorial constant e real one le."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Combinatorial_constant_e_real_pos",
+          "name": "Combinatorial_constant_e_real_pos",
+          "description": "YM lemma: Combinatorial constant e real pos."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Correlation_decay_from_CE",
+          "name": "Correlation_decay_from_CE",
+          "description": "YM lemma: Correlation decay from CE."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Decay_constant_eq_one",
+          "name": "Decay_constant_eq_one",
+          "description": "YM lemma: Decay constant eq one."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Decay_constant_from_KP",
+          "name": "Decay_constant_from_KP",
+          "description": "YM lemma: Decay constant from KP."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Decay_constant_pos",
+          "name": "Decay_constant_pos",
+          "description": "YM lemma: Decay constant pos."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Decay_constant_real",
+          "name": "Decay_constant_real",
+          "description": "YM lemma: Decay constant real."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Decay_constant_real_eq_one",
+          "name": "Decay_constant_real_eq_one",
+          "description": "YM lemma: Decay constant real eq one."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Decay_constant_real_pos",
+          "name": "Decay_constant_real_pos",
+          "description": "YM lemma: Decay constant real pos."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Dimension_formula_SU3",
+          "name": "Dimension_formula_SU3",
+          "description": "YM lemma: Dimension formula SU3."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Exp_moment_bound",
+          "name": "Exp_moment_bound",
+          "description": "YM lemma: Exp moment bound."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Exp_moment_bound_nonneg",
+          "name": "Exp_moment_bound_nonneg",
+          "description": "YM lemma: Exp moment bound nonneg."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Gaussian_measure_mean_eq_zero",
+          "name": "Gaussian_measure_mean_eq_zero",
+          "description": "YM lemma: Gaussian measure mean eq zero."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Gaussian_measure_variance_eq_one",
+          "name": "Gaussian_measure_variance_eq_one",
+          "description": "YM lemma: Gaussian measure variance eq one."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Gaussian_measure_variance_nonneg",
+          "name": "Gaussian_measure_variance_nonneg",
+          "description": "YM lemma: Gaussian measure variance nonneg."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Gaussian_measure_variance_pos",
+          "name": "Gaussian_measure_variance_pos",
+          "description": "YM lemma: Gaussian measure variance pos."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.heat_amplitude_constant_pos",
+          "name": "heat_amplitude_constant_pos",
+          "description": "YM lemma: heat amplitude constant pos."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.heat_decay_constant_pos",
+          "name": "heat_decay_constant_pos",
+          "description": "YM lemma: heat decay constant pos."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Heat_kernel_asymptotics",
+          "name": "Heat_kernel_asymptotics",
+          "description": "YM lemma: Heat kernel asymptotics."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Heat_kernel_asymptotics_real",
+          "name": "Heat_kernel_asymptotics_real",
+          "description": "YM lemma: Heat kernel asymptotics real."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Heat_kernel_at_identity_nonneg",
+          "name": "Heat_kernel_at_identity_nonneg",
+          "description": "YM lemma: Heat kernel at identity nonneg."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Heat_kernel_def_pos",
+          "name": "Heat_kernel_def_pos",
+          "description": "YM lemma: Heat kernel def pos."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Heat_kernel_def_real_at_zero",
+          "name": "Heat_kernel_def_real_at_zero",
+          "description": "YM lemma: Heat kernel def real at zero."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Heat_kernel_def_real_nonneg",
+          "name": "Heat_kernel_def_real_nonneg",
+          "description": "YM lemma: Heat kernel def real nonneg."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Heat_kernel_def_real_pos_of_pos",
+          "name": "Heat_kernel_def_real_pos_of_pos",
+          "description": "YM lemma: Heat kernel def real pos of pos."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Heat_kernel_tail_estimate",
+          "name": "Heat_kernel_tail_estimate",
+          "description": "YM lemma: Heat kernel tail estimate."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.High_temp_bound_base",
+          "name": "High_temp_bound_base",
+          "description": "YM lemma: High temp bound base."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.High_temp_bound_base_nonneg",
+          "name": "High_temp_bound_base_nonneg",
+          "description": "YM lemma: High temp bound base nonneg."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.High_temp_expansion",
+          "name": "High_temp_expansion",
+          "description": "YM lemma: High temp expansion."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Kotecky_Preiss_criterion",
+          "name": "Kotecky_Preiss_criterion",
+          "description": "YM lemma: Kotecky Preiss criterion."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Kotecky_Preiss_full",
+          "name": "Kotecky_Preiss_full",
+          "description": "YM lemma: Kotecky Preiss full."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Kotecky_Preiss_real",
+          "name": "Kotecky_Preiss_real",
+          "description": "YM lemma: Kotecky Preiss real."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Kotecky_Preiss_slack",
+          "name": "Kotecky_Preiss_slack",
+          "description": "YM lemma: Kotecky Preiss slack."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Kotecky_Preiss_strict",
+          "name": "Kotecky_Preiss_strict",
+          "description": "YM lemma: Kotecky Preiss strict."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Kotecky_Preiss_strict_real",
+          "name": "Kotecky_Preiss_strict_real",
+          "description": "YM lemma: Kotecky Preiss strict real."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Kotecky_Preiss_strict_slack",
+          "name": "Kotecky_Preiss_strict_slack",
+          "description": "YM lemma: Kotecky Preiss strict slack."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.MassGap_from_spectral_radius",
+          "name": "MassGap_from_spectral_radius",
+          "description": "YM lemma: MassGap from spectral radius."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.MassGap_YM4_Clay_from_strict",
+          "name": "MassGap_YM4_Clay_from_strict",
+          "description": "YM lemma: MassGap YM4 Clay from strict."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.MassGap_YM4_from_KP",
+          "name": "MassGap_YM4_from_KP",
+          "description": "YM lemma: MassGap YM4 from KP."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.mayer_Delta_constant",
+          "name": "mayer_Delta_constant",
+          "description": "YM lemma: mayer Delta constant."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Mayer_expansion_def",
+          "name": "Mayer_expansion_def",
+          "description": "YM lemma: Mayer expansion def."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Mayer_graph_expansion",
+          "name": "Mayer_graph_expansion",
+          "description": "YM lemma: Mayer graph expansion."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.mayer_K_constant",
+          "name": "mayer_K_constant",
+          "description": "YM lemma: mayer K constant."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.mayer_K_pos",
+          "name": "mayer_K_pos",
+          "description": "YM lemma: mayer K pos."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Mayer_overlap_symm",
+          "name": "Mayer_overlap_symm",
+          "description": "YM lemma: Mayer overlap symm."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Peter_Weyl_partial",
+          "name": "Peter_Weyl_partial",
+          "description": "YM lemma: Peter Weyl partial."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Plaquette_action_def_zero",
+          "name": "Plaquette_action_def_zero",
+          "description": "YM lemma: Plaquette action def zero."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Plaquette_action_nonneg",
+          "name": "Plaquette_action_nonneg",
+          "description": "YM lemma: Plaquette action nonneg."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.plaquette_activity_pw_ge_one",
+          "name": "plaquette_activity_pw_ge_one",
+          "description": "YM lemma: plaquette activity pw ge one."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.plaquette_activity_pw_nonneg",
+          "name": "plaquette_activity_pw_nonneg",
+          "description": "YM lemma: plaquette activity pw nonneg."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.plaquette_activity_pw_pos",
+          "name": "plaquette_activity_pw_pos",
+          "description": "YM lemma: plaquette activity pw pos."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Polymer_activity_bound",
+          "name": "Polymer_activity_bound",
+          "description": "YM lemma: Polymer activity bound."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.polymer_activity_bound_real",
+          "name": "polymer_activity_bound_real",
+          "description": "YM lemma: polymer activity bound real."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Polymer_activity_bound_real",
+          "name": "Polymer_activity_bound_real",
+          "description": "YM lemma: Polymer activity bound real."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Polymer_activity_bound_real_exp",
+          "name": "Polymer_activity_bound_real_exp",
+          "description": "YM lemma: Polymer activity bound real exp."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.polymer_activity_bound_real_pw",
+          "name": "polymer_activity_bound_real_pw",
+          "description": "YM lemma: polymer activity bound real pw."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Polymer_activity_bound_simple",
+          "name": "Polymer_activity_bound_simple",
+          "description": "YM lemma: Polymer activity bound simple."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Polymer_activity_def_zero",
+          "name": "Polymer_activity_def_zero",
+          "description": "YM lemma: Polymer activity def zero."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Polymer_measure_def",
+          "name": "Polymer_measure_def",
+          "description": "YM lemma: Polymer measure def."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Polymer_measure_pos",
+          "name": "Polymer_measure_pos",
+          "description": "YM lemma: Polymer measure pos."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Polymer_partition_function",
+          "name": "Polymer_partition_function",
+          "description": "YM lemma: Polymer partition function."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Polymer_support_def_id",
+          "name": "Polymer_support_def_id",
+          "description": "YM lemma: Polymer support def id."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Single_plaquette_handle",
+          "name": "Single_plaquette_handle",
+          "description": "YM lemma: Single plaquette handle."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Small_beta_regime_def_unfold",
+          "name": "Small_beta_regime_def_unfold",
+          "description": "YM lemma: Small beta regime def unfold."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Small_beta_regime_of_lt_zero",
+          "name": "Small_beta_regime_of_lt_zero",
+          "description": "YM lemma: Small beta regime of lt zero."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Small_beta_threshold_eq_one",
+          "name": "Small_beta_threshold_eq_one",
+          "description": "YM lemma: Small beta threshold eq one."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Small_beta_threshold_pos",
+          "name": "Small_beta_threshold_pos",
+          "description": "YM lemma: Small beta threshold pos."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Small_coupling_from_KP",
+          "name": "Small_coupling_from_KP",
+          "description": "YM lemma: Small coupling from KP."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Small_coupling_KP_slack",
+          "name": "Small_coupling_KP_slack",
+          "description": "YM lemma: Small coupling KP slack."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Small_g_regime_def",
+          "name": "Small_g_regime_def",
+          "description": "YM lemma: Small g regime def."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Small_g_regime_pos",
+          "name": "Small_g_regime_pos",
+          "description": "YM lemma: Small g regime pos."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Small_t_dominance",
+          "name": "Small_t_dominance",
+          "description": "YM lemma: Small t dominance."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Small_t_dominance_real",
+          "name": "Small_t_dominance_real",
+          "description": "YM lemma: Small t dominance real."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Spectral_radius_lt_one",
+          "name": "Spectral_radius_lt_one",
+          "description": "YM lemma: Spectral radius lt one."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Spectral_radius_lt_one_real",
+          "name": "Spectral_radius_lt_one_real",
+          "description": "YM lemma: Spectral radius lt one real."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Spectral_radius_lt_one_strict_real_handle",
+          "name": "Spectral_radius_lt_one_strict_real_handle",
+          "description": "YM lemma: Spectral radius lt one strict real handle."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Stationary_phase_bound",
+          "name": "Stationary_phase_bound",
+          "description": "YM lemma: Stationary phase bound."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Strict_contraction_CE",
+          "name": "Strict_contraction_CE",
+          "description": "YM lemma: Strict contraction CE."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Strict_contraction_CE_le_one",
+          "name": "Strict_contraction_CE_le_one",
+          "description": "YM lemma: Strict contraction CE le one."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Strict_contraction_real",
+          "name": "Strict_contraction_real",
+          "description": "YM lemma: Strict contraction real."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Strict_contraction_real_le_one",
+          "name": "Strict_contraction_real_le_one",
+          "description": "YM lemma: Strict contraction real le one."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Strict_contraction_real_strict_handle",
+          "name": "Strict_contraction_real_strict_handle",
+          "description": "YM lemma: Strict contraction real strict handle."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.SU3_dimension_eq_eight",
+          "name": "SU3_dimension_eq_eight",
+          "description": "YM lemma: SU3 dimension eq eight."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.SU3_dimension_pos",
+          "name": "SU3_dimension_pos",
+          "description": "YM lemma: SU3 dimension pos."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Transfer_bound_from_CE",
+          "name": "Transfer_bound_from_CE",
+          "description": "YM lemma: Transfer bound from CE."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Transfer_contraction_from_CE",
+          "name": "Transfer_contraction_from_CE",
+          "description": "YM lemma: Transfer contraction from CE."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Transfer_from_measure",
+          "name": "Transfer_from_measure",
+          "description": "YM lemma: Transfer from measure."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Tree_graph_counting",
+          "name": "Tree_graph_counting",
+          "description": "YM lemma: Tree graph counting."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Tree_graph_counting_one",
+          "name": "Tree_graph_counting_one",
+          "description": "YM lemma: Tree graph counting one."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Tree_graph_counting_three",
+          "name": "Tree_graph_counting_three",
+          "description": "YM lemma: Tree graph counting three."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Tree_graph_counting_two",
+          "name": "Tree_graph_counting_two",
+          "description": "YM lemma: Tree graph counting two."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Truncation_error_bound",
+          "name": "Truncation_error_bound",
+          "description": "YM lemma: Truncation error bound."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Truncation_error_bound_value_nonneg",
+          "name": "Truncation_error_bound_value_nonneg",
+          "description": "YM lemma: Truncation error bound value nonneg."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Ursell_bound_real",
+          "name": "Ursell_bound_real",
+          "description": "YM lemma: Ursell bound real."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Ursell_functions",
+          "name": "Ursell_functions",
+          "description": "YM lemma: Ursell functions."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Ursell_functions_bound",
+          "name": "Ursell_functions_bound",
+          "description": "YM lemma: Ursell functions bound."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Ursell_tree_bound",
+          "name": "Ursell_tree_bound",
+          "description": "YM lemma: Ursell tree bound."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Ursell_tree_bound_exp_real",
+          "name": "Ursell_tree_bound_exp_real",
+          "description": "YM lemma: Ursell tree bound exp real."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Ursell_tree_bound_real",
+          "name": "Ursell_tree_bound_real",
+          "description": "YM lemma: Ursell tree bound real."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Ursell_tree_bound_simple",
+          "name": "Ursell_tree_bound_simple",
+          "description": "YM lemma: Ursell tree bound simple."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Weyl_character_formula_SU3",
+          "name": "Weyl_character_formula_SU3",
+          "description": "YM lemma: Weyl character formula SU3."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Weyl_dim_def_pos",
+          "name": "Weyl_dim_def_pos",
+          "description": "YM lemma: Weyl dim def pos."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Weyl_dim_SU3_explicit_at_fundamental",
+          "name": "Weyl_dim_SU3_explicit_at_fundamental",
+          "description": "YM lemma: Weyl dim SU3 explicit at fundamental."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Weyl_dim_SU3_explicit_at_zero",
+          "name": "Weyl_dim_SU3_explicit_at_zero",
+          "description": "YM lemma: Weyl dim SU3 explicit at zero."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Weyl_dim_SU3_explicit_pos",
+          "name": "Weyl_dim_SU3_explicit_pos",
+          "description": "YM lemma: Weyl dim SU3 explicit pos."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Weyl_sum_bounded_by_heat",
+          "name": "Weyl_sum_bounded_by_heat",
+          "description": "YM lemma: Weyl sum bounded by heat."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Weyl_sum_explicit_SU3_nonneg",
+          "name": "Weyl_sum_explicit_SU3_nonneg",
+          "description": "YM lemma: Weyl sum explicit SU3 nonneg."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Weyl_sum_explicit_SU3_real_at_zero",
+          "name": "Weyl_sum_explicit_SU3_real_at_zero",
+          "description": "YM lemma: Weyl sum explicit SU3 real at zero."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Weyl_sum_explicit_SU3_real_nonneg",
+          "name": "Weyl_sum_explicit_SU3_real_nonneg",
+          "description": "YM lemma: Weyl sum explicit SU3 real nonneg."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Weyl_sum_monotone_N",
+          "name": "Weyl_sum_monotone_N",
+          "description": "YM lemma: Weyl sum monotone N."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Wick_pairing_constant_eq_one",
+          "name": "Wick_pairing_constant_eq_one",
+          "description": "YM lemma: Wick pairing constant eq one."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Wick_pairing_constant_pos",
+          "name": "Wick_pairing_constant_pos",
+          "description": "YM lemma: Wick pairing constant pos."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Wick_theorem_plaquette",
+          "name": "Wick_theorem_plaquette",
+          "description": "YM lemma: Wick theorem plaquette."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Wilson_action_decomposition_zero",
+          "name": "Wilson_action_decomposition_zero",
+          "description": "YM lemma: Wilson action decomposition zero."
+        },
+        {
+          "module": "Towers.YM.ClusterExpansion",
+          "theorem": "TheoremaAureum.Towers.YM.ClusterExpansion.Wilson_measure_def",
+          "name": "Wilson_measure_def",
+          "description": "YM lemma: Wilson measure def."
+        },
+        {
+          "module": "Towers.YM.ContinuumHookup",
+          "theorem": "TheoremaAureum.Towers.YM.ContinuumHookup.continuum_heat_envelope_bound",
+          "name": "continuum_heat_envelope_bound",
+          "description": "YM lemma: continuum heat envelope bound."
+        },
+        {
+          "module": "Towers.YM.ContinuumHookup",
+          "theorem": "TheoremaAureum.Towers.YM.ContinuumHookup.continuum_heat_envelope_bound_target_default",
+          "name": "continuum_heat_envelope_bound_target_default",
+          "description": "YM lemma: continuum heat envelope bound target default."
+        },
+        {
+          "module": "Towers.YM.ContinuumHookup",
+          "theorem": "TheoremaAureum.Towers.YM.ContinuumHookup.continuum_heat_envelope_bound_widened_upper",
+          "name": "continuum_heat_envelope_bound_widened_upper",
+          "description": "YM lemma: continuum heat envelope bound widened upper."
+        },
+        {
+          "module": "Towers.YM.ContinuumHookup",
+          "theorem": "TheoremaAureum.Towers.YM.ContinuumHookup.continuum_heat_envelope_pos_widened",
+          "name": "continuum_heat_envelope_pos_widened",
+          "description": "YM lemma: continuum heat envelope pos widened."
+        },
+        {
+          "module": "Towers.YM.Continuum",
+          "theorem": "TheoremaAureum.Towers.YM.Continuum.AsymptoticFreedom",
+          "name": "AsymptoticFreedom",
+          "description": "YM lemma: AsymptoticFreedom."
+        },
+        {
+          "module": "Towers.YM.Continuum",
+          "theorem": "TheoremaAureum.Towers.YM.Continuum.IsMassGap",
+          "name": "IsMassGap",
+          "description": "YM lemma: IsMassGap."
+        },
+        {
+          "module": "Towers.YM.Continuum",
+          "theorem": "TheoremaAureum.Towers.YM.Continuum.lattice_to_continuum",
+          "name": "lattice_to_continuum",
+          "description": "YM lemma: lattice to continuum."
+        },
+        {
+          "module": "Towers.YM.Continuum",
+          "theorem": "TheoremaAureum.Towers.YM.Continuum.YM4_Continuum",
+          "name": "YM4_Continuum",
+          "description": "YM lemma: YM4 Continuum."
+        },
+        {
+          "module": "Towers.YM.EntropyBound",
+          "theorem": "TheoremaAureum.Towers.YM.EntropyBound.polymer_entropy_bound",
+          "name": "polymer_entropy_bound",
+          "description": "YM lemma: polymer entropy bound."
+        },
+        {
+          "module": "Towers.YM.EuclideanInvarianceCore",
+          "theorem": "TheoremaAureum.Towers.YM.OS.translateAction_zero",
+          "name": "translateAction_zero",
+          "description": "YM lemma: translateAction zero."
+        },
+        {
+          "module": "Towers.YM.GaugeField",
+          "theorem": "TheoremaAureum.Towers.YM.GaugeField.curvature_add",
+          "name": "curvature_add",
+          "description": "YM lemma: curvature add."
+        },
+        {
+          "module": "Towers.YM.GaugeField",
+          "theorem": "TheoremaAureum.Towers.YM.GaugeField.curvature_zero",
+          "name": "curvature_zero",
+          "description": "YM lemma: curvature zero."
+        },
+        {
+          "module": "Towers.YM.GaugeField",
+          "theorem": "TheoremaAureum.Towers.YM.GaugeField.GaugeField_zero_apply",
+          "name": "GaugeField_zero_apply",
+          "description": "YM lemma: GaugeField zero apply."
+        },
+        {
+          "module": "Towers.YM.GaugeField",
+          "theorem": "TheoremaAureum.Towers.YM.GaugeField.YMHamiltonian_eq_norm_sq",
+          "name": "YMHamiltonian_eq_norm_sq",
+          "description": "YM lemma: YMHamiltonian eq norm sq."
+        },
+        {
+          "module": "Towers.YM.GaugeField",
+          "theorem": "TheoremaAureum.Towers.YM.GaugeField.YMHamiltonian_nonneg",
+          "name": "YMHamiltonian_nonneg",
+          "description": "YM lemma: YMHamiltonian nonneg."
+        },
+        {
+          "module": "Towers.YM.GaugeField",
+          "theorem": "TheoremaAureum.Towers.YM.GaugeField.YMHamiltonian_zero",
+          "name": "YMHamiltonian_zero",
+          "description": "YM lemma: YMHamiltonian zero."
+        },
+        {
+          "module": "Towers.YM.Geometry",
+          "theorem": "TheoremaAureum.Towers.YM.Geometry.curvature_4d_def",
+          "name": "curvature_4d_def",
+          "description": "YM lemma: curvature 4d def."
+        },
+        {
+          "module": "Towers.YM.Geometry",
+          "theorem": "TheoremaAureum.Towers.YM.Geometry.f_abc_antisymm",
+          "name": "f_abc_antisymm",
+          "description": "YM lemma: f abc antisymm."
+        },
+        {
+          "module": "Towers.YM.Geometry",
+          "theorem": "TheoremaAureum.Towers.YM.Geometry.f_abc_jacobi",
+          "name": "f_abc_jacobi",
+          "description": "YM lemma: f abc jacobi."
+        },
+        {
+          "module": "Towers.YM.Geometry",
+          "theorem": "TheoremaAureum.Towers.YM.Geometry.lattice_spacetime_4d_def",
+          "name": "lattice_spacetime_4d_def",
+          "description": "YM lemma: lattice spacetime 4d def."
+        },
+        {
+          "module": "Towers.YM.Geometry",
+          "theorem": "TheoremaAureum.Towers.YM.Geometry.structure_constants_su3_full_def",
+          "name": "structure_constants_su3_full_def",
+          "description": "YM lemma: structure constants su3 full def."
+        },
+        {
+          "module": "Towers.YM.GibbsMeasure",
+          "theorem": "TheoremaAureum.Towers.YM.LatticeGauge.partitionFn_zero_beta_eq_one",
+          "name": "partitionFn_zero_beta_eq_one",
+          "description": "YM lemma: partitionFn zero beta eq one."
+        },
+        {
+          "module": "Towers.YM.KoteckyPreissReal",
+          "theorem": "TheoremaAureum.Towers.YM.LatticeGauge.kotecky_preiss_real",
+          "name": "kotecky_preiss_real",
+          "description": "YM lemma: kotecky preiss real."
+        },
+        {
+          "module": "Towers.YM.KoteckyPreiss",
+          "theorem": "TheoremaAureum.Towers.YM.LatticeGauge.kotecky_preiss",
+          "name": "kotecky_preiss",
+          "description": "YM lemma: kotecky preiss."
+        },
+        {
+          "module": "Towers.YM.KP_Closure",
+          "theorem": "TheoremaAureum.Towers.YM.KPClosure.c_worst_fuss_catalan_lt_one",
+          "name": "c_worst_fuss_catalan_lt_one",
+          "description": "YM lemma: c worst fuss catalan lt one."
+        },
+        {
+          "module": "Towers.YM.KP_Closure",
+          "theorem": "TheoremaAureum.Towers.YM.KPClosure.gap_kp_star_gt_two",
+          "name": "gap_kp_star_gt_two",
+          "description": "YM lemma: gap kp star gt two."
+        },
+        {
+          "module": "Towers.YM.KP_Closure",
+          "theorem": "TheoremaAureum.Towers.YM.KPClosure.log_two_gt_two_thirds",
+          "name": "log_two_gt_two_thirds",
+          "description": "YM lemma: log two gt two thirds."
+        },
+        {
+          "module": "Towers.YM.KP_Closure",
+          "theorem": "TheoremaAureum.Towers.YM.KPClosure.W1_KP_Surface_proved",
+          "name": "W1_KP_Surface_proved",
+          "description": "YM lemma: W1 KP Surface proved."
+        },
+        {
+          "module": "Towers.YM.KP_Closure",
+          "theorem": "TheoremaAureum.Towers.YM.KPClosure.W1_one_seventh_proved",
+          "name": "W1_one_seventh_proved",
+          "description": "YM lemma: W1 one seventh proved."
+        },
+        {
+          "module": "Towers.YM.KP_Closure",
+          "theorem": "TheoremaAureum.Towers.YM.KPClosure.z_kp_star_lt_seventh",
+          "name": "z_kp_star_lt_seventh",
+          "description": "YM lemma: z kp star lt seventh."
+        },
+        {
+          "module": "Towers.YM.KP_W1_Proof",
+          "theorem": "TheoremaAureum.Towers.YM.KPW1Proof.w1_kp_lt",
+          "name": "w1_kp_lt",
+          "description": "SU(3) heat-trace / Tauberian: w1 kp lt."
+        },
+        {
+          "module": "Towers.YM.LatticeGauge",
+          "theorem": "TheoremaAureum.Towers.YM.LatticeGauge.GaugeConfig_eq_parametric",
+          "name": "GaugeConfig_eq_parametric",
+          "description": "Wilson action / plaquette lemma: GaugeConfig eq parametric."
+        },
+        {
+          "module": "Towers.YM.LatticeGauge",
+          "theorem": "TheoremaAureum.Towers.YM.LatticeGauge.G_eq_SU3",
+          "name": "G_eq_SU3",
+          "description": "Wilson action / plaquette lemma: G eq SU3."
+        },
+        {
+          "module": "Towers.YM.LatticeGauge",
+          "theorem": "TheoremaAureum.Towers.YM.LatticeGauge.Lattice_def",
+          "name": "Lattice_def",
+          "description": "Wilson action / plaquette lemma: Lattice def."
+        },
+        {
+          "module": "Towers.YM.MassGapEnvelope",
+          "theorem": "TheoremaAureum.Towers.YM.MassGapEnvelope.IsMassGap_mass_gap_envelope_default",
+          "name": "IsMassGap_mass_gap_envelope_default",
+          "description": "YM lemma: IsMassGap mass gap envelope default."
+        },
+        {
+          "module": "Towers.YM.MassGapEnvelope",
+          "theorem": "TheoremaAureum.Towers.YM.MassGapEnvelope.mass_gap_envelope_constant_pos",
+          "name": "mass_gap_envelope_constant_pos",
+          "description": "YM lemma: mass gap envelope constant pos."
+        },
+        {
+          "module": "Towers.YM.MassGapEnvelope",
+          "theorem": "TheoremaAureum.Towers.YM.MassGapEnvelope.mass_gap_envelope_constant_widened_pos",
+          "name": "mass_gap_envelope_constant_widened_pos",
+          "description": "YM lemma: mass gap envelope constant widened pos."
+        },
+        {
+          "module": "Towers.YM.MassGap",
+          "theorem": "TheoremaAureum.Towers.YM.diagNegOneOneMat",
+          "name": "diagNegOneOneMat",
+          "description": "YM lemma: diagNegOneOneMat."
+        },
+        {
+          "module": "Towers.YM.MassGap",
+          "theorem": "TheoremaAureum.Towers.YM.hilbertCanonicalFamily",
+          "name": "hilbertCanonicalFamily",
+          "description": "YM lemma: hilbertCanonicalFamily."
+        },
+        {
+          "module": "Towers.YM.MassGap",
+          "theorem": "TheoremaAureum.Towers.YM.hilbertCanonicalFamily_orthonormal",
+          "name": "hilbertCanonicalFamily_orthonormal",
+          "description": "YM lemma: hilbertCanonicalFamily orthonormal."
+        },
+        {
+          "module": "Towers.YM.MassGap",
+          "theorem": "TheoremaAureum.Towers.YM.HilbertSpace_not_finiteDimensional",
+          "name": "HilbertSpace_not_finiteDimensional",
+          "description": "YM lemma: HilbertSpace not finiteDimensional."
+        },
+        {
+          "module": "Towers.YM.MassGap",
+          "theorem": "TheoremaAureum.Towers.YM.IsEigenstate_of_forall_zero",
+          "name": "IsEigenstate_of_forall_zero",
+          "description": "Eigenstates with coefficient 0 are trivial."
+        },
+        {
+          "module": "Towers.YM.MassGap",
+          "theorem": "TheoremaAureum.Towers.YM.IsEigenstate_zero_const",
+          "name": "IsEigenstate_zero_const",
+          "description": "\u00ac IsEigenstate YMH (fun _ => c) (no constant eigenstate)."
+        },
+        {
+          "module": "Towers.YM.MassGap",
+          "theorem": "TheoremaAureum.Towers.YM.IsEigenstate_zero_zero",
+          "name": "IsEigenstate_zero_zero",
+          "description": "\u00ac IsEigenstate YMH 0 (zero not eigenstate)."
+        },
+        {
+          "module": "Towers.YM.MassGap",
+          "theorem": "TheoremaAureum.Towers.YM.MassGap",
+          "name": "MassGap",
+          "description": "YM lemma: MassGap."
+        },
+        {
+          "module": "Towers.YM.MassGap",
+          "theorem": "TheoremaAureum.Towers.YM.MassGap_iff_pos",
+          "name": "MassGap_iff_pos",
+          "description": "YM lemma: MassGap iff pos."
+        },
+        {
+          "module": "Towers.YM.MassGap",
+          "theorem": "TheoremaAureum.Towers.YM.MassGap_le_twelve_of_witness",
+          "name": "MassGap_le_twelve_of_witness",
+          "description": "YM lemma: MassGap le twelve of witness."
+        },
+        {
+          "module": "Towers.YM.MassGap",
+          "theorem": "TheoremaAureum.Towers.YM.MassGap_pos",
+          "name": "MassGap_pos",
+          "description": "YM lemma: MassGap pos."
+        },
+        {
+          "module": "Towers.YM.MassGap",
+          "theorem": "TheoremaAureum.Towers.YM.SU3Connection_component_det_one",
+          "name": "SU3Connection_component_det_one",
+          "description": "det(Ai)=1 (SU(3))."
+        },
+        {
+          "module": "Towers.YM.MassGap",
+          "theorem": "TheoremaAureum.Towers.YM.SU3Connection_component_mul_det_one",
+          "name": "SU3Connection_component_mul_det_one",
+          "description": "det((A\u00b7B)(i))=1."
+        },
+        {
+          "module": "Towers.YM.MassGap",
+          "theorem": "TheoremaAureum.Towers.YM.SU3Connection_component_mul_unitary",
+          "name": "SU3Connection_component_mul_unitary",
+          "description": "(A\u00b7B)(i) is unitary."
+        },
+        {
+          "module": "Towers.YM.MassGap",
+          "theorem": "TheoremaAureum.Towers.YM.SU3Connection_component_star_det_one",
+          "name": "SU3Connection_component_star_det_one",
+          "description": "det((Ai)\u2020)=1."
+        },
+        {
+          "module": "Towers.YM.MassGap",
+          "theorem": "TheoremaAureum.Towers.YM.SU3Connection_component_star_mul_self",
+          "name": "SU3Connection_component_star_mul_self",
+          "description": "(Ai)\u2020\u00b7(Ai)=I (two-sided unitary)."
+        },
+        {
+          "module": "Towers.YM.MassGap",
+          "theorem": "TheoremaAureum.Towers.YM.SU3Connection_component_unitary",
+          "name": "SU3Connection_component_unitary",
+          "description": "(Ai)\u2020\u00b7(Ai)=I (unitary)."
+        },
+        {
+          "module": "Towers.YM.MassGap",
+          "theorem": "TheoremaAureum.Towers.YM.SU3Connection_mul_assoc",
+          "name": "SU3Connection_mul_assoc",
+          "description": "(A\u00b7B)\u00b7C=A\u00b7(B\u00b7C) (associativity)."
+        },
+        {
+          "module": "Towers.YM.MassGap",
+          "theorem": "TheoremaAureum.Towers.YM.SU3Connection_mul_one",
+          "name": "SU3Connection_mul_one",
+          "description": "A\u00b71=A (right unit)."
+        },
+        {
+          "module": "Towers.YM.MassGap",
+          "theorem": "TheoremaAureum.Towers.YM.SU3Connection_one_mul",
+          "name": "SU3Connection_one_mul",
+          "description": "1\u00b7A=A (left unit)."
+        },
+        {
+          "module": "Towers.YM.MassGap",
+          "theorem": "TheoremaAureum.Towers.YM.SU3Connection_one_one",
+          "name": "SU3Connection_one_one",
+          "description": "1\u00b71=1."
+        },
+        {
+          "module": "Towers.YM.MassGap",
+          "theorem": "TheoremaAureum.Towers.YM.YMHamiltonian_abs_le_twelve",
+          "name": "YMHamiltonian_abs_le_twelve",
+          "description": "YM lemma: YMHamiltonian abs le twelve."
+        },
+        {
+          "module": "Towers.YM.MassGap",
+          "theorem": "TheoremaAureum.Towers.YM.YMHamiltonian_abs_le_twelve_tight",
+          "name": "YMHamiltonian_abs_le_twelve_tight",
+          "description": "YM lemma: YMHamiltonian abs le twelve tight."
+        },
+        {
+          "module": "Towers.YM.MassGap",
+          "theorem": "TheoremaAureum.Towers.YM.YMHamiltonian_diagNegOneOne_eq_neg_four",
+          "name": "YMHamiltonian_diagNegOneOne_eq_neg_four",
+          "description": "YM lemma: YMHamiltonian diagNegOneOne eq neg four."
+        },
+        {
+          "module": "Towers.YM.MassGap",
+          "theorem": "TheoremaAureum.Towers.YM.YMHamiltonian_no_eigenstate",
+          "name": "YMHamiltonian_no_eigenstate",
+          "description": "YM lemma: YMHamiltonian no eigenstate."
+        },
+        {
+          "module": "Towers.YM.MassGap",
+          "theorem": "TheoremaAureum.Towers.YM.YMHamiltonian_no_nonzero_eigenstate",
+          "name": "YMHamiltonian_no_nonzero_eigenstate",
+          "description": "YM lemma: YMHamiltonian no nonzero eigenstate."
+        },
+        {
+          "module": "Towers.YM.MassGap",
+          "theorem": "TheoremaAureum.Towers.YM.YMHamiltonian_not_isEigenstate_zero",
+          "name": "YMHamiltonian_not_isEigenstate_zero",
+          "description": "\u00ac IsEigenstate YMH \u03c8=0."
+        },
+        {
+          "module": "Towers.YM.MassGap",
+          "theorem": "TheoremaAureum.Towers.YM.YMHamiltonian_one_eq_twelve",
+          "name": "YMHamiltonian_one_eq_twelve",
+          "description": "YMH(fun _ => 1) = 12 (first numerical output)."
+        },
+        {
+          "module": "Towers.YM.MassGap",
+          "theorem": "TheoremaAureum.Towers.YM.YMHamiltonianReal_vacuum_eq_zero",
+          "name": "YMHamiltonianReal_vacuum_eq_zero",
+          "description": "YM lemma: YMHamiltonianReal vacuum eq zero."
+        },
+        {
+          "module": "Towers.YM.NontrivialGap",
+          "theorem": "TheoremaAureum.Towers.YM.OS.nontrivial_gap",
+          "name": "nontrivial_gap",
+          "description": "YM lemma: nontrivial gap."
+        },
+        {
+          "module": "Towers.YM.OSReconstruction",
+          "theorem": "TheoremaAureum.Towers.YM.OSReconstruction.OSPreHilbert.OS_Hilbert_complete",
+          "name": "OS_Hilbert_complete",
+          "description": "YM lemma: OS Hilbert complete."
+        },
+        {
+          "module": "Towers.YM.OSReconstruction",
+          "theorem": "TheoremaAureum.Towers.YM.OSReconstruction.OSPreHilbert.OS_Hilbert_quotient",
+          "name": "OS_Hilbert_quotient",
+          "description": "YM lemma: OS Hilbert quotient."
+        },
+        {
+          "module": "Towers.YM.OSReconstruction",
+          "theorem": "TheoremaAureum.Towers.YM.OSReconstruction.OSPreHilbert.OS_Hilbert_separable",
+          "name": "OS_Hilbert_separable",
+          "description": "YM lemma: OS Hilbert separable."
+        },
+        {
+          "module": "Towers.YM.OSReconstruction",
+          "theorem": "TheoremaAureum.Towers.YM.OSReconstruction.OSPreHilbert.OSInnerProduct",
+          "name": "OSInnerProduct",
+          "description": "YM lemma: OSInnerProduct."
+        },
+        {
+          "module": "Towers.YM.OSReconstruction",
+          "theorem": "TheoremaAureum.Towers.YM.OSReconstruction.OSPreHilbert.OSInnerProduct_symm",
+          "name": "OSInnerProduct_symm",
+          "description": "YM lemma: OSInnerProduct symm."
+        },
+        {
+          "module": "Towers.YM.OSReconstruction",
+          "theorem": "TheoremaAureum.Towers.YM.OSReconstruction.OSPreHilbert.OSNullSpace",
+          "name": "OSNullSpace",
+          "description": "YM lemma: OSNullSpace."
+        },
+        {
+          "module": "Towers.YM.OSReconstruction",
+          "theorem": "TheoremaAureum.Towers.YM.OSReconstruction.OSPreHilbert.OSSeminorm",
+          "name": "OSSeminorm",
+          "description": "YM lemma: OSSeminorm."
+        },
+        {
+          "module": "Towers.YM.OSReconstruction",
+          "theorem": "TheoremaAureum.Towers.YM.OSReconstruction.OSPreHilbert.OSSeminorm_nonneg",
+          "name": "OSSeminorm_nonneg",
+          "description": "YM lemma: OSSeminorm nonneg."
+        },
+        {
+          "module": "Towers.YM.OSReconstruction",
+          "theorem": "TheoremaAureum.Towers.YM.OSReconstruction.OSPreHilbert.TimeZeroAlgebra_action",
+          "name": "TimeZeroAlgebra_action",
+          "description": "YM lemma: TimeZeroAlgebra action."
+        },
+        {
+          "module": "Towers.YM.OSReconstruction",
+          "theorem": "TheoremaAureum.Towers.YM.OSReconstruction.OSPreHilbert.Transfer_contraction",
+          "name": "Transfer_contraction",
+          "description": "YM lemma: Transfer contraction."
+        },
+        {
+          "module": "Towers.YM.OSReconstruction",
+          "theorem": "TheoremaAureum.Towers.YM.OSReconstruction.OSPreHilbert.Transfer_operator_def",
+          "name": "Transfer_operator_def",
+          "description": "YM lemma: Transfer operator def."
+        },
+        {
+          "module": "Towers.YM.OSReconstruction",
+          "theorem": "TheoremaAureum.Towers.YM.OSReconstruction.OSPreHilbert.Transfer_selfadjoint",
+          "name": "Transfer_selfadjoint",
+          "description": "YM lemma: Transfer selfadjoint."
+        },
+        {
+          "module": "Towers.YM.OSReconstruction",
+          "theorem": "TheoremaAureum.Towers.YM.OSReconstruction.OSPreHilbert.Transfer_well_defined",
+          "name": "Transfer_well_defined",
+          "description": "YM lemma: Transfer well defined."
+        },
+        {
+          "module": "Towers.YM.OSReconstruction",
+          "theorem": "TheoremaAureum.Towers.YM.OSReconstruction.OSPreHilbert.Vacuum_invariant",
+          "name": "Vacuum_invariant",
+          "description": "YM lemma: Vacuum invariant."
+        },
+        {
+          "module": "Towers.YM.OSReconstruction",
+          "theorem": "TheoremaAureum.Towers.YM.OSReconstruction.OSPreHilbert.Vacuum_vector_norm_one",
+          "name": "Vacuum_vector_norm_one",
+          "description": "YM lemma: Vacuum vector norm one."
+        },
+        {
+          "module": "Towers.YM.OSReconstruction",
+          "theorem": "TheoremaAureum.Towers.YM.OSReconstruction.ReflectionPositiveData.pullback_pullback",
+          "name": "pullback_pullback",
+          "description": "YM lemma: pullback pullback."
+        },
+        {
+          "module": "Towers.YM.OSReconstruction",
+          "theorem": "TheoremaAureum.Towers.YM.OSReconstruction.ReflectionPositiveData.pullback_vacuum",
+          "name": "pullback_vacuum",
+          "description": "YM lemma: pullback vacuum."
+        },
+        {
+          "module": "Towers.YM.OSReconstruction",
+          "theorem": "TheoremaAureum.Towers.YM.OSReconstruction.ReflectionPositiveData.theta_bijective",
+          "name": "theta_bijective",
+          "description": "YM lemma: theta bijective."
+        },
+        {
+          "module": "Towers.YM.OSReconstruction",
+          "theorem": "TheoremaAureum.Towers.YM.OSReconstruction.ReflectionPositiveData.theta_injective",
+          "name": "theta_injective",
+          "description": "YM lemma: theta injective."
+        },
+        {
+          "module": "Towers.YM.OSReconstruction",
+          "theorem": "TheoremaAureum.Towers.YM.OSReconstruction.ReflectionPositiveData.theta_surjective",
+          "name": "theta_surjective",
+          "description": "YM lemma: theta surjective."
+        },
+        {
+          "module": "Towers.YM.OSReconstruction",
+          "theorem": "TheoremaAureum.Towers.YM.OSReconstruction.ReflectionPositiveData.theta_theta_eq",
+          "name": "theta_theta_eq",
+          "description": "YM lemma: theta theta eq."
+        },
+        {
+          "module": "Towers.YM.OSReconstruction",
+          "theorem": "TheoremaAureum.Towers.YM.OSReconstruction.ReflectionPositiveData.vacuumFunction_apply",
+          "name": "vacuumFunction_apply",
+          "description": "YM lemma: vacuumFunction apply."
+        },
+        {
+          "module": "Towers.YM.PeterWeylHeat",
+          "theorem": "TheoremaAureum.Towers.YM.PeterWeylHeat.Heat_kernel_envelope_real_ge_one_of_pos",
+          "name": "Heat_kernel_envelope_real_ge_one_of_pos",
+          "description": "K(t) \u2265 1 for t>0 (stand-in envelope)."
+        },
+        {
+          "module": "Towers.YM.PeterWeylHeat",
+          "theorem": "TheoremaAureum.Towers.YM.PeterWeylHeat.Heat_kernel_envelope_real_ge_truncation",
+          "name": "Heat_kernel_envelope_real_ge_truncation",
+          "description": "Peter\u2013Weyl / Varadhan heat-kernel: Heat kernel envelope real ge truncation."
+        },
+        {
+          "module": "Towers.YM.PeterWeylHeat",
+          "theorem": "TheoremaAureum.Towers.YM.PeterWeylHeat.Heat_kernel_envelope_real_nonneg",
+          "name": "Heat_kernel_envelope_real_nonneg",
+          "description": "Peter\u2013Weyl / Varadhan heat-kernel: Heat kernel envelope real nonneg."
+        },
+        {
+          "module": "Towers.YM.PeterWeylHeat",
+          "theorem": "TheoremaAureum.Towers.YM.PeterWeylHeat.Weyl_sum_explicit_SU3_real_le_Heat_kernel_envelope_real",
+          "name": "Weyl_sum_explicit_SU3_real_le_Heat_kernel_envelope_real",
+          "description": "Peter\u2013Weyl / Varadhan heat-kernel: Weyl sum explicit SU3 real le Heat kernel envelope real."
+        },
+        {
+          "module": "Towers.YM.PeterWeylHeatVaradhan",
+          "theorem": "TheoremaAureum.Towers.YM.PeterWeylHeat.Heat_kernel_envelope_real_antitone",
+          "name": "Heat_kernel_envelope_real_antitone",
+          "description": "K(t) antitone in t>0."
+        },
+        {
+          "module": "Towers.YM.PeterWeylHeatVaradhan",
+          "theorem": "TheoremaAureum.Towers.YM.PeterWeylHeat.Heat_kernel_envelope_real_ge_one_of_pos",
+          "name": "Heat_kernel_envelope_real_ge_one_of_pos",
+          "description": "K(t) \u2265 1 for t>0 (stand-in envelope)."
+        },
+        {
+          "module": "Towers.YM.PeterWeylHeatVaradhan",
+          "theorem": "TheoremaAureum.Towers.YM.PeterWeylHeatVaradhan.Heat_kernel_envelope_real_le_varadhan",
+          "name": "Heat_kernel_envelope_real_le_varadhan",
+          "description": "K(t) \u2264 C\u00b7e^{-c/t} on [t_lo,t_top]."
+        },
+        {
+          "module": "Towers.YM.PeterWeylHeatVaradhan",
+          "theorem": "TheoremaAureum.Towers.YM.PeterWeylHeatVaradhan.Heat_kernel_envelope_real_le_varadhan",
+          "name": "Heat_kernel_envelope_real_le_varadhan",
+          "description": "K(t) \u2264 C\u00b7e^{-c/t} on [t_lo,t_top]."
+        },
+        {
+          "module": "Towers.YM.PeterWeylHeatVaradhan",
+          "theorem": "TheoremaAureum.Towers.YM.PeterWeylHeatVaradhan.varadhan_C_pos",
+          "name": "varadhan_C_pos",
+          "description": "Varadhan amplitude C > 0."
+        },
+        {
+          "module": "Towers.YM.PeterWeylQuadratic",
+          "theorem": "TheoremaAureum.Towers.YM.PeterWeylQuadratic.PeterWeyl_Summable_SU3_half_cubic",
+          "name": "PeterWeyl_Summable_SU3_half_cubic",
+          "description": "Peter\u2013Weyl / Varadhan heat-kernel: PeterWeyl Summable SU3 half cubic."
+        },
+        {
+          "module": "Towers.YM.PeterWeylQuadratic",
+          "theorem": "TheoremaAureum.Towers.YM.PeterWeylQuadratic.PeterWeyl_Summable_SU3_quadratic",
+          "name": "PeterWeyl_Summable_SU3_quadratic",
+          "description": "Peter\u2013Weyl / Varadhan heat-kernel: PeterWeyl Summable SU3 quadratic."
+        },
+        {
+          "module": "Towers.YM.PeterWeylQuadratic",
+          "theorem": "TheoremaAureum.Towers.YM.PeterWeylQuadratic.summable_poly6_succ_exp_neg_real",
+          "name": "summable_poly6_succ_exp_neg_real",
+          "description": "Peter\u2013Weyl / Varadhan heat-kernel: summable poly6 succ exp neg real."
+        },
+        {
+          "module": "Towers.YM.PeterWeylQuadratic",
+          "theorem": "TheoremaAureum.Towers.YM.PeterWeylQuadratic.Weyl_dim_SU3_explicit_real_le_cubic",
+          "name": "Weyl_dim_SU3_explicit_real_le_cubic",
+          "description": "Peter\u2013Weyl / Varadhan heat-kernel: Weyl dim SU3 explicit real le cubic."
+        },
+        {
+          "module": "Towers.YM.PeterWeylQuadratic",
+          "theorem": "TheoremaAureum.Towers.YM.PeterWeylQuadratic.Weyl_dim_SU3_explicit_real_le_half_cubic",
+          "name": "Weyl_dim_SU3_explicit_real_le_half_cubic",
+          "description": "Peter\u2013Weyl / Varadhan heat-kernel: Weyl dim SU3 explicit real le half cubic."
+        },
+        {
+          "module": "Towers.YM.PeterWeylQuadratic",
+          "theorem": "TheoremaAureum.Towers.YM.PeterWeylQuadratic.Weyl_dim_SU3_explicit_real_le_half_prod",
+          "name": "Weyl_dim_SU3_explicit_real_le_half_prod",
+          "description": "Peter\u2013Weyl / Varadhan heat-kernel: Weyl dim SU3 explicit real le half prod."
+        },
+        {
+          "module": "Towers.YM.PeterWeyl",
+          "theorem": "TheoremaAureum.Towers.YM.PeterWeyl.Casimir_SU3_explicit_real_ge_linear",
+          "name": "Casimir_SU3_explicit_real_ge_linear",
+          "description": "Peter\u2013Weyl / Varadhan heat-kernel: Casimir SU3 explicit real ge linear."
+        },
+        {
+          "module": "Towers.YM.PeterWeyl",
+          "theorem": "TheoremaAureum.Towers.YM.PeterWeyl.PeterWeyl_Summable_SU3",
+          "name": "PeterWeyl_Summable_SU3",
+          "description": "Peter\u2013Weyl / Varadhan heat-kernel: PeterWeyl Summable SU3."
+        },
+        {
+          "module": "Towers.YM.PeterWeyl",
+          "theorem": "TheoremaAureum.Towers.YM.PeterWeyl.summable_poly_succ_exp_neg_real",
+          "name": "summable_poly_succ_exp_neg_real",
+          "description": "Peter\u2013Weyl / Varadhan heat-kernel: summable poly succ exp neg real."
+        },
+        {
+          "module": "Towers.YM.PeterWeyl",
+          "theorem": "TheoremaAureum.Towers.YM.PeterWeyl.Weyl_dim_SU3_explicit_real_le_poly",
+          "name": "Weyl_dim_SU3_explicit_real_le_poly",
+          "description": "Peter\u2013Weyl / Varadhan heat-kernel: Weyl dim SU3 explicit real le poly."
+        },
+        {
+          "module": "Towers.YM.PlaquetteAction",
+          "theorem": "TheoremaAureum.Towers.YM.PlaquetteAction.wilsonPlaquette_def",
+          "name": "wilsonPlaquette_def",
+          "description": "Wilson action / plaquette lemma: wilsonPlaquette def."
+        },
+        {
+          "module": "Towers.YM.PlaquetteAction",
+          "theorem": "TheoremaAureum.Towers.YM.PlaquetteAction.wilsonPlaquette_one",
+          "name": "wilsonPlaquette_one",
+          "description": "Wilson action / plaquette lemma: wilsonPlaquette one."
+        },
+        {
+          "module": "Towers.YM.PlaquetteAction",
+          "theorem": "TheoremaAureum.Towers.YM.PlaquetteAction.YMHamiltonianWilson_vacuum_eq_zero",
+          "name": "YMHamiltonianWilson_vacuum_eq_zero",
+          "description": "Wilson action / plaquette lemma: YMHamiltonianWilson vacuum eq zero."
+        },
+        {
+          "module": "Towers.YM.PolymerModel",
+          "theorem": "TheoremaAureum.Towers.YM.LatticeGauge.polymerWeightReal_empty",
+          "name": "polymerWeightReal_empty",
+          "description": "YM lemma: polymerWeightReal empty."
+        },
+        {
+          "module": "Towers.YM.RealCurvature",
+          "theorem": "TheoremaAureum.Towers.YM.RealCurvature.curvature_eq_zero",
+          "name": "curvature_eq_zero",
+          "description": "YM lemma: curvature eq zero."
+        },
+        {
+          "module": "Towers.YM.RealCurvature",
+          "theorem": "TheoremaAureum.Towers.YM.RealCurvature.lattice_deriv_id",
+          "name": "lattice_deriv_id",
+          "description": "YM lemma: lattice deriv id."
+        },
+        {
+          "module": "Towers.YM.RealCurvature",
+          "theorem": "TheoremaAureum.Towers.YM.RealCurvature.lie_bracket_eq_zero",
+          "name": "lie_bracket_eq_zero",
+          "description": "YM lemma: lie bracket eq zero."
+        },
+        {
+          "module": "Towers.YM.RealCurvature",
+          "theorem": "TheoremaAureum.Towers.YM.RealCurvature.structure_constants_su3_eq_zero",
+          "name": "structure_constants_su3_eq_zero",
+          "description": "YM lemma: structure constants su3 eq zero."
+        },
+        {
+          "module": "Towers.YM.RealCurvature",
+          "theorem": "TheoremaAureum.Towers.YM.RealCurvature.YMEnergy_nonneg",
+          "name": "YMEnergy_nonneg",
+          "description": "YM lemma: YMEnergy nonneg."
+        },
+        {
+          "module": "Towers.YM.RealCurvatureV2",
+          "theorem": "TheoremaAureum.Towers.YM.RealCurvatureV2.curvature_su3_def",
+          "name": "curvature_su3_def",
+          "description": "YM lemma: curvature su3 def."
+        },
+        {
+          "module": "Towers.YM.RealCurvatureV2",
+          "theorem": "TheoremaAureum.Towers.YM.RealCurvatureV2.lattice_deriv_forward_diff",
+          "name": "lattice_deriv_forward_diff",
+          "description": "YM lemma: lattice deriv forward diff."
+        },
+        {
+          "module": "Towers.YM.RealCurvatureV2",
+          "theorem": "TheoremaAureum.Towers.YM.RealCurvatureV2.lie_bracket_su3_def",
+          "name": "lie_bracket_su3_def",
+          "description": "YM lemma: lie bracket su3 def."
+        },
+        {
+          "module": "Towers.YM.RealCurvatureV2",
+          "theorem": "TheoremaAureum.Towers.YM.RealCurvatureV2.structure_constants_su3_def",
+          "name": "structure_constants_su3_def",
+          "description": "YM lemma: structure constants su3 def."
+        },
+        {
+          "module": "Towers.YM.RealCurvatureV2",
+          "theorem": "TheoremaAureum.Towers.YM.RealCurvatureV2.YMEnergy_nonneg",
+          "name": "YMEnergy_nonneg",
+          "description": "YM lemma: YMEnergy nonneg."
+        },
+        {
+          "module": "Towers.YM.ReflectionPositivityCore",
+          "theorem": "TheoremaAureum.Towers.YM.OS.reflection_involutive",
+          "name": "reflection_involutive",
+          "description": "YM lemma: reflection involutive."
+        },
+        {
+          "module": "Towers.YM.ReflectionPositivityCore",
+          "theorem": "TheoremaAureum.Towers.YM.OS.reflection_pos_one",
+          "name": "reflection_pos_one",
+          "description": "YM lemma: reflection pos one."
+        },
+        {
+          "module": "Towers.YM.ReflectionPositivityMeasure",
+          "theorem": "TheoremaAureum.Towers.YM.OS.reflectionPos_diracEvalLM",
+          "name": "reflectionPos_diracEvalLM",
+          "description": "YM lemma: reflectionPos diracEvalLM."
+        },
+        {
+          "module": "Towers.YM.RiemannianGeometry",
+          "theorem": "TheoremaAureum.Towers.YM.RiemannianGeometry.cWit_ne_one",
+          "name": "cWit_ne_one",
+          "description": "YM lemma: cWit ne one."
+        },
+        {
+          "module": "Towers.YM.RiemannianGeometry",
+          "theorem": "TheoremaAureum.Towers.YM.RiemannianGeometry.d_SU3_eq_chordal_id",
+          "name": "d_SU3_eq_chordal_id",
+          "description": "YM lemma: d SU3 eq chordal id."
+        },
+        {
+          "module": "Towers.YM.RiemannianGeometry",
+          "theorem": "TheoremaAureum.Towers.YM.RiemannianGeometry.d_SU3_geodesic_eq_d_SU3_diag",
+          "name": "d_SU3_geodesic_eq_d_SU3_diag",
+          "description": "YM lemma: d SU3 geodesic eq d SU3 diag."
+        },
+        {
+          "module": "Towers.YM.RiemannianGeometry",
+          "theorem": "TheoremaAureum.Towers.YM.RiemannianGeometry.d_SU3_geodesic_le_of_mem",
+          "name": "d_SU3_geodesic_le_of_mem",
+          "description": "YM lemma: d SU3 geodesic le of mem."
+        },
+        {
+          "module": "Towers.YM.RiemannianGeometry",
+          "theorem": "TheoremaAureum.Towers.YM.RiemannianGeometry.d_SU3_geodesic_nonneg",
+          "name": "d_SU3_geodesic_nonneg",
+          "description": "YM lemma: d SU3 geodesic nonneg."
+        },
+        {
+          "module": "Towers.YM.RiemannianGeometry",
+          "theorem": "TheoremaAureum.Towers.YM.RiemannianGeometry.d_SU3_geodesic_self",
+          "name": "d_SU3_geodesic_self",
+          "description": "YM lemma: d SU3 geodesic self."
+        },
+        {
+          "module": "Towers.YM.RiemannianGeometry",
+          "theorem": "TheoremaAureum.Towers.YM.RiemannianGeometry.d_SU3_geodesic_symm",
+          "name": "d_SU3_geodesic_symm",
+          "description": "YM lemma: d SU3 geodesic symm."
+        },
+        {
+          "module": "Towers.YM.RiemannianGeometry",
+          "theorem": "TheoremaAureum.Towers.YM.RiemannianGeometry.d_SU3_isBiInvariant",
+          "name": "d_SU3_isBiInvariant",
+          "description": "YM lemma: d SU3 isBiInvariant."
+        },
+        {
+          "module": "Towers.YM.RiemannianGeometry",
+          "theorem": "TheoremaAureum.Towers.YM.RiemannianGeometry.d_SU3_isMetric",
+          "name": "d_SU3_isMetric",
+          "description": "YM lemma: d SU3 isMetric."
+        },
+        {
+          "module": "Towers.YM.RiemannianGeometry",
+          "theorem": "TheoremaAureum.Towers.YM.RiemannianGeometry.d_SU3_isPseudoDist",
+          "name": "d_SU3_isPseudoDist",
+          "description": "YM lemma: d SU3 isPseudoDist."
+        },
+        {
+          "module": "Towers.YM.RiemannianGeometry",
+          "theorem": "TheoremaAureum.Towers.YM.RiemannianGeometry.d_SU3_le_geodesic_of_contracts",
+          "name": "d_SU3_le_geodesic_of_contracts",
+          "description": "YM lemma: d SU3 le geodesic of contracts."
+        },
+        {
+          "module": "Towers.YM.RiemannianGeometry",
+          "theorem": "TheoremaAureum.Towers.YM.RiemannianGeometry.d_SU3_nonneg",
+          "name": "d_SU3_nonneg",
+          "description": "YM lemma: d SU3 nonneg."
+        },
+        {
+          "module": "Towers.YM.RiemannianGeometry",
+          "theorem": "TheoremaAureum.Towers.YM.RiemannianGeometry.d_SU3_self",
+          "name": "d_SU3_self",
+          "description": "YM lemma: d SU3 self."
+        },
+        {
+          "module": "Towers.YM.RiemannianGeometry",
+          "theorem": "TheoremaAureum.Towers.YM.RiemannianGeometry.not_IsMetricOnSU3_const_zero",
+          "name": "not_IsMetricOnSU3_const_zero",
+          "description": "YM lemma: not IsMetricOnSU3 const zero."
+        },
+        {
+          "module": "Towers.YM.S4Numerics",
+          "theorem": "TheoremaAureum.Towers.YM.S4Numerics.c_S4_lt",
+          "name": "c_S4_lt",
+          "description": "YM lemma: c S4 lt."
+        },
+        {
+          "module": "Towers.YM.S4Numerics",
+          "theorem": "TheoremaAureum.Towers.YM.S4Numerics.h4Order_factor",
+          "name": "h4Order_factor",
+          "description": "YM lemma: h4Order factor."
+        },
+        {
+          "module": "Towers.YM.S4Numerics",
+          "theorem": "TheoremaAureum.Towers.YM.S4Numerics.kEff_le",
+          "name": "kEff_le",
+          "description": "YM lemma: kEff le."
+        },
+        {
+          "module": "Towers.YM.S4Numerics",
+          "theorem": "TheoremaAureum.Towers.YM.S4Numerics.zModes_eq",
+          "name": "zModes_eq",
+          "description": "YM lemma: zModes eq."
+        },
+        {
+          "module": "Towers.YM.ShiftOperator",
+          "theorem": "TheoremaAureum.Towers.YM.OS.norm_shift_apply",
+          "name": "norm_shift_apply",
+          "description": "YM lemma: norm shift apply."
+        },
+        {
+          "module": "Towers.YM.SpectralBound",
+          "theorem": "TheoremaAureum.Towers.YM.OS.spectral_bound",
+          "name": "spectral_bound",
+          "description": "YM lemma: spectral bound."
+        },
+        {
+          "module": "Towers.YM.SpectralGap",
+          "theorem": "TheoremaAureum.Towers.YM.SpectralGap.mass_gap_def",
+          "name": "mass_gap_def",
+          "description": "YM lemma: mass gap def."
+        },
+        {
+          "module": "Towers.YM.SpectralGap",
+          "theorem": "TheoremaAureum.Towers.YM.SpectralGap.mass_gap_nonneg",
+          "name": "mass_gap_nonneg",
+          "description": "YM lemma: mass gap nonneg."
+        },
+        {
+          "module": "Towers.YM.SpectralGap",
+          "theorem": "TheoremaAureum.Towers.YM.SpectralGap.Perron_Frobenius_statement",
+          "name": "Perron_Frobenius_statement",
+          "description": "YM lemma: Perron Frobenius statement."
+        },
+        {
+          "module": "Towers.YM.SpectralGap",
+          "theorem": "TheoremaAureum.Towers.YM.SpectralGap.spectral_radius_def",
+          "name": "spectral_radius_def",
+          "description": "YM lemma: spectral radius def."
+        },
+        {
+          "module": "Towers.YM.SpectralGap",
+          "theorem": "TheoremaAureum.Towers.YM.SpectralGap.spectral_radius_nonneg",
+          "name": "spectral_radius_nonneg",
+          "description": "YM lemma: spectral radius nonneg."
+        },
+        {
+          "module": "Towers.YM.Spectrum",
+          "theorem": "TheoremaAureum.Towers.YM.Spectrum.cluster_decomposition_implies_gap",
+          "name": "cluster_decomposition_implies_gap",
+          "description": "YM lemma: cluster decomposition implies gap."
+        },
+        {
+          "module": "Towers.YM.Spectrum",
+          "theorem": "TheoremaAureum.Towers.YM.Spectrum.cluster_decomposition_proven",
+          "name": "cluster_decomposition_proven",
+          "description": "YM lemma: cluster decomposition proven."
+        },
+        {
+          "module": "Towers.YM.Spectrum",
+          "theorem": "TheoremaAureum.Towers.YM.Spectrum.cluster_decomposition_schema",
+          "name": "cluster_decomposition_schema",
+          "description": "YM lemma: cluster decomposition schema."
+        },
+        {
+          "module": "Towers.YM.Spectrum",
+          "theorem": "TheoremaAureum.Towers.YM.Spectrum.cluster_implies_mass_gap_schema",
+          "name": "cluster_implies_mass_gap_schema",
+          "description": "YM lemma: cluster implies mass gap schema."
+        },
+        {
+          "module": "Towers.YM.Spectrum",
+          "theorem": "TheoremaAureum.Towers.YM.Spectrum.clustering_for_YM3",
+          "name": "clustering_for_YM3",
+          "description": "YM lemma: clustering for YM3."
+        },
+        {
+          "module": "Towers.YM.Spectrum",
+          "theorem": "TheoremaAureum.Towers.YM.Spectrum.clustering_for_YM3_lemma",
+          "name": "clustering_for_YM3_lemma",
+          "description": "YM lemma: clustering for YM3 lemma."
+        },
+        {
+          "module": "Towers.YM.Spectrum",
+          "theorem": "TheoremaAureum.Towers.YM.Spectrum.clustering_property_YM3",
+          "name": "clustering_property_YM3",
+          "description": "YM lemma: clustering property YM3."
+        },
+        {
+          "module": "Towers.YM.Spectrum",
+          "theorem": "TheoremaAureum.Towers.YM.Spectrum.correlation_decay_conditional",
+          "name": "correlation_decay_conditional",
+          "description": "YM lemma: correlation decay conditional."
+        },
+        {
+          "module": "Towers.YM.Spectrum",
+          "theorem": "TheoremaAureum.Towers.YM.Spectrum.correlation_decay_exponential",
+          "name": "correlation_decay_exponential",
+          "description": "YM lemma: correlation decay exponential."
+        },
+        {
+          "module": "Towers.YM.Spectrum",
+          "theorem": "TheoremaAureum.Towers.YM.Spectrum.correlation_decay_from_gap",
+          "name": "correlation_decay_from_gap",
+          "description": "YM lemma: correlation decay from gap."
+        },
+        {
+          "module": "Towers.YM.Spectrum",
+          "theorem": "TheoremaAureum.Towers.YM.Spectrum.Correlation_length_from_coercive",
+          "name": "Correlation_length_from_coercive",
+          "description": "YM lemma: Correlation length from coercive."
+        },
+        {
+          "module": "Towers.YM.Spectrum",
+          "theorem": "TheoremaAureum.Towers.YM.Spectrum.Exponential_clustering_schema",
+          "name": "Exponential_clustering_schema",
+          "description": "YM lemma: Exponential clustering schema."
+        },
+        {
+          "module": "Towers.YM.Spectrum",
+          "theorem": "TheoremaAureum.Towers.YM.Spectrum.infrared_regularization",
+          "name": "infrared_regularization",
+          "description": "YM lemma: infrared regularization."
+        },
+        {
+          "module": "Towers.YM.Spectrum",
+          "theorem": "TheoremaAureum.Towers.YM.Spectrum.MassGap_v2_monotone",
+          "name": "MassGap_v2_monotone",
+          "description": "YM lemma: MassGap v2 monotone."
+        },
+        {
+          "module": "Towers.YM.Spectrum",
+          "theorem": "TheoremaAureum.Towers.YM.Spectrum.MassGap_v2_zero_iff",
+          "name": "MassGap_v2_zero_iff",
+          "description": "YM lemma: MassGap v2 zero iff."
+        },
+        {
+          "module": "Towers.YM.Spectrum",
+          "theorem": "TheoremaAureum.Towers.YM.Spectrum.MassGap_YM4_Clay",
+          "name": "MassGap_YM4_Clay",
+          "description": "YM lemma: MassGap YM4 Clay."
+        },
+        {
+          "module": "Towers.YM.Spectrum",
+          "theorem": "TheoremaAureum.Towers.YM.Spectrum.MassGap_YM4_Clay_conditional",
+          "name": "MassGap_YM4_Clay_conditional",
+          "description": "YM lemma: MassGap YM4 Clay conditional."
+        },
+        {
+          "module": "Towers.YM.Spectrum",
+          "theorem": "TheoremaAureum.Towers.YM.Spectrum.MassGap_YM4_proven",
+          "name": "MassGap_YM4_proven",
+          "description": "YM lemma: MassGap YM4 proven."
+        },
+        {
+          "module": "Towers.YM.Spectrum",
+          "theorem": "TheoremaAureum.Towers.YM.Spectrum.OS0_temperedness_from_coercive",
+          "name": "OS0_temperedness_from_coercive",
+          "description": "YM lemma: OS0 temperedness from coercive."
+        },
+        {
+          "module": "Towers.YM.Spectrum",
+          "theorem": "TheoremaAureum.Towers.YM.Spectrum.OS1_euclidean_invariance_schema",
+          "name": "OS1_euclidean_invariance_schema",
+          "description": "YM lemma: OS1 euclidean invariance schema."
+        },
+        {
+          "module": "Towers.YM.Spectrum",
+          "theorem": "TheoremaAureum.Towers.YM.Spectrum.OS_reconstruction_from_H",
+          "name": "OS_reconstruction_from_H",
+          "description": "YM lemma: OS reconstruction from H."
+        },
+        {
+          "module": "Towers.YM.Spectrum",
+          "theorem": "TheoremaAureum.Towers.YM.Spectrum.OsterwalderSchrader_axioms_schema",
+          "name": "OsterwalderSchrader_axioms_schema",
+          "description": "YM lemma: OsterwalderSchrader axioms schema."
+        },
+        {
+          "module": "Towers.YM.Spectrum",
+          "theorem": "TheoremaAureum.Towers.YM.Spectrum.Perron_Frobenius_assumption_schema",
+          "name": "Perron_Frobenius_assumption_schema",
+          "description": "YM lemma: Perron Frobenius assumption schema."
+        },
+        {
+          "module": "Towers.YM.Spectrum",
+          "theorem": "TheoremaAureum.Towers.YM.Spectrum.reflection_positivity_check",
+          "name": "reflection_positivity_check",
+          "description": "YM lemma: reflection positivity check."
+        },
+        {
+          "module": "Towers.YM.Spectrum",
+          "theorem": "TheoremaAureum.Towers.YM.Spectrum.spectral_gap_from_clustering",
+          "name": "spectral_gap_from_clustering",
+          "description": "YM lemma: spectral gap from clustering."
+        },
+        {
+          "module": "Towers.YM.Spectrum",
+          "theorem": "TheoremaAureum.Towers.YM.Spectrum.spectral_radius_transfer",
+          "name": "spectral_radius_transfer",
+          "description": "YM lemma: spectral radius transfer."
+        },
+        {
+          "module": "Towers.YM.Spectrum",
+          "theorem": "TheoremaAureum.Towers.YM.Spectrum.spectrum_gap_schema",
+          "name": "spectrum_gap_schema",
+          "description": "YM lemma: spectrum gap schema."
+        },
+        {
+          "module": "Towers.YM.Spectrum",
+          "theorem": "TheoremaAureum.Towers.YM.Spectrum.transfer_matrix_definition_schema",
+          "name": "transfer_matrix_definition_schema",
+          "description": "YM lemma: transfer matrix definition schema."
+        },
+        {
+          "module": "Towers.YM.Spectrum",
+          "theorem": "TheoremaAureum.Towers.YM.Spectrum.transfer_matrix_norm_less_one",
+          "name": "transfer_matrix_norm_less_one",
+          "description": "YM lemma: transfer matrix norm less one."
+        },
+        {
+          "module": "Towers.YM.Spectrum",
+          "theorem": "TheoremaAureum.Towers.YM.Spectrum.vacuum_expectation_bounded",
+          "name": "vacuum_expectation_bounded",
+          "description": "YM lemma: vacuum expectation bounded."
+        },
+        {
+          "module": "Towers.YM.Spectrum",
+          "theorem": "TheoremaAureum.Towers.YM.Spectrum.vacuum_gap_lower_bound",
+          "name": "vacuum_gap_lower_bound",
+          "description": "YM lemma: vacuum gap lower bound."
+        },
+        {
+          "module": "Towers.YM.Spectrum",
+          "theorem": "TheoremaAureum.Towers.YM.Spectrum.vacuum_gap_positive_schema",
+          "name": "vacuum_gap_positive_schema",
+          "description": "YM lemma: vacuum gap positive schema."
+        },
+        {
+          "module": "Towers.YM.Spectrum",
+          "theorem": "TheoremaAureum.Towers.YM.Spectrum.vacuum_gap_positive_theorem",
+          "name": "vacuum_gap_positive_theorem",
+          "description": "YM lemma: vacuum gap positive theorem."
+        },
+        {
+          "module": "Towers.YM.Spectrum",
+          "theorem": "TheoremaAureum.Towers.YM.Spectrum.Wightman_functions_from_OS_schema",
+          "name": "Wightman_functions_from_OS_schema",
+          "description": "YM lemma: Wightman functions from OS schema."
+        },
+        {
+          "module": "Towers.YM.Spectrum",
+          "theorem": "TheoremaAureum.Towers.YM.Spectrum.YMHamiltonian_attains_inf",
+          "name": "YMHamiltonian_attains_inf",
+          "description": "YM lemma: YMHamiltonian attains inf."
+        },
+        {
+          "module": "Towers.YM.Spectrum",
+          "theorem": "TheoremaAureum.Towers.YM.Spectrum.YMHamiltonian_coercive",
+          "name": "YMHamiltonian_coercive",
+          "description": "YM lemma: YMHamiltonian coercive."
+        },
+        {
+          "module": "Towers.YM.Spectrum",
+          "theorem": "TheoremaAureum.Towers.YM.Spectrum.YMHamiltonian_essentially_selfadjoint_schema",
+          "name": "YMHamiltonian_essentially_selfadjoint_schema",
+          "description": "YM lemma: YMHamiltonian essentially selfadjoint schema."
+        },
+        {
+          "module": "Towers.YM.Spectrum",
+          "theorem": "TheoremaAureum.Towers.YM.Spectrum.YMHamiltonian_gap_above_vacuum_schema",
+          "name": "YMHamiltonian_gap_above_vacuum_schema",
+          "description": "YM lemma: YMHamiltonian gap above vacuum schema."
+        },
+        {
+          "module": "Towers.YM.Spectrum",
+          "theorem": "TheoremaAureum.Towers.YM.Spectrum.YMHamiltonian_image_bounded",
+          "name": "YMHamiltonian_image_bounded",
+          "description": "YM lemma: YMHamiltonian image bounded."
+        },
+        {
+          "module": "Towers.YM.Spectrum",
+          "theorem": "TheoremaAureum.Towers.YM.Spectrum.YMHamiltonian_image_has_inf",
+          "name": "YMHamiltonian_image_has_inf",
+          "description": "YM lemma: YMHamiltonian image has inf."
+        },
+        {
+          "module": "Towers.YM.Spectrum",
+          "theorem": "TheoremaAureum.Towers.YM.Spectrum.YMHamiltonian_image_nonzero",
+          "name": "YMHamiltonian_image_nonzero",
+          "description": "YM lemma: YMHamiltonian image nonzero."
+        },
+        {
+          "module": "Towers.YM.Spectrum",
+          "theorem": "TheoremaAureum.Towers.YM.Spectrum.YMHamiltonian_inf_eq_twelve",
+          "name": "YMHamiltonian_inf_eq_twelve",
+          "description": "YM lemma: YMHamiltonian inf eq twelve."
+        },
+        {
+          "module": "Towers.YM.Spectrum",
+          "theorem": "TheoremaAureum.Towers.YM.Spectrum.YMHamiltonian_selfadjoint",
+          "name": "YMHamiltonian_selfadjoint",
+          "description": "YM lemma: YMHamiltonian selfadjoint."
+        },
+        {
+          "module": "Towers.YM.Spectrum",
+          "theorem": "TheoremaAureum.Towers.YM.Spectrum.YMHamiltonian_selfadjoint_proven",
+          "name": "YMHamiltonian_selfadjoint_proven",
+          "description": "YM lemma: YMHamiltonian selfadjoint proven."
+        },
+        {
+          "module": "Towers.YM.Spectrum",
+          "theorem": "TheoremaAureum.Towers.YM.Spectrum.YMHamiltonian_vacuum_def",
+          "name": "YMHamiltonian_vacuum_def",
+          "description": "YM lemma: YMHamiltonian vacuum def."
+        },
+        {
+          "module": "Towers.YM.SU3Basis",
+          "theorem": "TheoremaAureum.Towers.YM.gellMann\u2081_mem",
+          "name": "gellMann\u2081_mem",
+          "description": "YM lemma: gellMann\u2081 mem."
+        },
+        {
+          "module": "Towers.YM.SU3Basis",
+          "theorem": "TheoremaAureum.Towers.YM.gellMann\u2082_mem",
+          "name": "gellMann\u2082_mem",
+          "description": "YM lemma: gellMann\u2082 mem."
+        },
+        {
+          "module": "Towers.YM.SU3Basis",
+          "theorem": "TheoremaAureum.Towers.YM.gellMann\u2083_mem",
+          "name": "gellMann\u2083_mem",
+          "description": "YM lemma: gellMann\u2083 mem."
+        },
+        {
+          "module": "Towers.YM.SU3Basis",
+          "theorem": "TheoremaAureum.Towers.YM.gellMann\u2084_mem",
+          "name": "gellMann\u2084_mem",
+          "description": "YM lemma: gellMann\u2084 mem."
+        },
+        {
+          "module": "Towers.YM.SU3Basis",
+          "theorem": "TheoremaAureum.Towers.YM.gellMann\u2085_mem",
+          "name": "gellMann\u2085_mem",
+          "description": "YM lemma: gellMann\u2085 mem."
+        },
+        {
+          "module": "Towers.YM.SU3Basis",
+          "theorem": "TheoremaAureum.Towers.YM.gellMann\u2086_mem",
+          "name": "gellMann\u2086_mem",
+          "description": "YM lemma: gellMann\u2086 mem."
+        },
+        {
+          "module": "Towers.YM.SU3Basis",
+          "theorem": "TheoremaAureum.Towers.YM.gellMann\u2087_mem",
+          "name": "gellMann\u2087_mem",
+          "description": "YM lemma: gellMann\u2087 mem."
+        },
+        {
+          "module": "Towers.YM.SU3Basis",
+          "theorem": "TheoremaAureum.Towers.YM.gellMann\u2088_mem",
+          "name": "gellMann\u2088_mem",
+          "description": "YM lemma: gellMann\u2088 mem."
+        },
+        {
+          "module": "Towers.YM.SU3Basis",
+          "theorem": "TheoremaAureum.Towers.YM.inner_su3",
+          "name": "inner_su3",
+          "description": "YM lemma: inner su3."
+        },
+        {
+          "module": "Towers.YM.SU3Basis",
+          "theorem": "TheoremaAureum.Towers.YM.inner_su3_add_left",
+          "name": "inner_su3_add_left",
+          "description": "YM lemma: inner su3 add left."
+        },
+        {
+          "module": "Towers.YM.SU3Basis",
+          "theorem": "TheoremaAureum.Towers.YM.inner_su3_conj_symm",
+          "name": "inner_su3_conj_symm",
+          "description": "YM lemma: inner su3 conj symm."
+        },
+        {
+          "module": "Towers.YM.SU3Basis",
+          "theorem": "TheoremaAureum.Towers.YM.inner_su3_smul_left",
+          "name": "inner_su3_smul_left",
+          "description": "YM lemma: inner su3 smul left."
+        },
+        {
+          "module": "Towers.YM.SU3Basis",
+          "theorem": "TheoremaAureum.Towers.YM.instance_inner_product_space_su3_core",
+          "name": "instance_inner_product_space_su3_core",
+          "description": "YM lemma: instance inner product space su3 core."
+        },
+        {
+          "module": "Towers.YM.SU3Basis",
+          "theorem": "TheoremaAureum.Towers.YM.norm_su3",
+          "name": "norm_su3",
+          "description": "YM lemma: norm su3."
+        },
+        {
+          "module": "Towers.YM.SU3Basis",
+          "theorem": "TheoremaAureum.Towers.YM.su3_basis_def",
+          "name": "su3_basis_def",
+          "description": "YM lemma: su3 basis def."
+        },
+        {
+          "module": "Towers.YM.SU3Basis",
+          "theorem": "TheoremaAureum.Towers.YM.su3_basis_linearIndependent",
+          "name": "su3_basis_linearIndependent",
+          "description": "YM lemma: su3 basis linearIndependent."
+        },
+        {
+          "module": "Towers.YM.SU3Basis",
+          "theorem": "TheoremaAureum.Towers.YM.su3_basis_spans",
+          "name": "su3_basis_spans",
+          "description": "YM lemma: su3 basis spans."
+        },
+        {
+          "module": "Towers.YM.SU3Basis",
+          "theorem": "TheoremaAureum.Towers.YM.su3_equiv_fin8_def",
+          "name": "su3_equiv_fin8_def",
+          "description": "YM lemma: su3 equiv fin8 def."
+        },
+        {
+          "module": "Towers.YM.SU3.Tauberian",
+          "theorem": "SU3Tauberian.dim_sq_le_casimir_cubed",
+          "name": "dim_sq_le_casimir_cubed",
+          "description": "SU(3) heat-trace / Tauberian: dim sq le casimir cubed."
+        },
+        {
+          "module": "Towers.YM.SU3.Tauberian",
+          "theorem": "SU3Tauberian.summable_heat_trace",
+          "name": "summable_heat_trace",
+          "description": "SU(3) heat-trace / Tauberian: summable heat trace."
+        },
+        {
+          "module": "Towers.YM.SU3",
+          "theorem": "TheoremaAureum.Towers.YM.instance_addcommgroup_su3",
+          "name": "instance_addcommgroup_su3",
+          "description": "YM lemma: instance addcommgroup su3."
+        },
+        {
+          "module": "Towers.YM.SU3",
+          "theorem": "TheoremaAureum.Towers.YM.instance_module_real_su3",
+          "name": "instance_module_real_su3",
+          "description": "YM lemma: instance module real su3."
+        },
+        {
+          "module": "Towers.YM.SU3",
+          "theorem": "TheoremaAureum.Towers.YM.su3_add_mem",
+          "name": "su3_add_mem",
+          "description": "A,B\u2208su(3) \u2192 A+B\u2208su(3) (closure under +)."
+        },
+        {
+          "module": "Towers.YM.SU3",
+          "theorem": "TheoremaAureum.Towers.YM.su3_lie_algebra_def",
+          "name": "su3_lie_algebra_def",
+          "description": "su(3) = {A:Mat(3,\u2102) | A\u2020=-A, tr A=0} (definition)."
+        },
+        {
+          "module": "Towers.YM.SU3",
+          "theorem": "TheoremaAureum.Towers.YM.su3_mem_iff_anti_hermitian_traceless",
+          "name": "su3_mem_iff_anti_hermitian_traceless",
+          "description": "A\u2208su(3) \u2194 A\u2020=-A \u2227 trA=0."
+        },
+        {
+          "module": "Towers.YM.SU3",
+          "theorem": "TheoremaAureum.Towers.YM.su3_neg_mem",
+          "name": "su3_neg_mem",
+          "description": "A\u2208su(3) \u2192 -A\u2208su(3) (closure under negation)."
+        },
+        {
+          "module": "Towers.YM.SU3",
+          "theorem": "TheoremaAureum.Towers.YM.su3_smul_mem",
+          "name": "su3_smul_mem",
+          "description": "A\u2208su(3), r:\u211d \u2192 r\u2022A\u2208su(3) (\u211d-scaling)."
+        },
+        {
+          "module": "Towers.YM.SU3",
+          "theorem": "TheoremaAureum.Towers.YM.su3_sub_mem",
+          "name": "su3_sub_mem",
+          "description": "A,B\u2208su(3) \u2192 A-B\u2208su(3)."
+        },
+        {
+          "module": "Towers.YM.SU3",
+          "theorem": "TheoremaAureum.Towers.YM.su3_submodule",
+          "name": "su3_submodule",
+          "description": "su(3) as Submodule \u211d of Mat(3,\u2102)."
+        },
+        {
+          "module": "Towers.YM.SU3",
+          "theorem": "TheoremaAureum.Towers.YM.su3_submodule_mem_iff",
+          "name": "su3_submodule_mem_iff",
+          "description": "x\u2208su3_submodule \u2194 x\u2208su3."
+        },
+        {
+          "module": "Towers.YM.SU3",
+          "theorem": "TheoremaAureum.Towers.YM.su3_zero_mem",
+          "name": "su3_zero_mem",
+          "description": "0 \u2208 su(3)."
+        },
+        {
+          "module": "Towers.YM.TemperednessCore",
+          "theorem": "TheoremaAureum.Towers.YM.OS.tempered_of_clm",
+          "name": "tempered_of_clm",
+          "description": "YM lemma: tempered of clm."
+        },
+        {
+          "module": "Towers.YM.TransferOperator",
+          "theorem": "TheoremaAureum.Towers.YM.OS.boltzmannWeight_const_one",
+          "name": "boltzmannWeight_const_one",
+          "description": "YM lemma: boltzmannWeight const one."
+        },
+        {
+          "module": "Towers.YM.TransferOperator",
+          "theorem": "TheoremaAureum.Towers.YM.OS.boltzmannWeight_pos",
+          "name": "boltzmannWeight_pos",
+          "description": "YM lemma: boltzmannWeight pos."
+        },
+        {
+          "module": "Towers.YM.TransferOperator",
+          "theorem": "TheoremaAureum.Towers.YM.OS.TransferOperator_vacuum_eq_id",
+          "name": "TransferOperator_vacuum_eq_id",
+          "description": "YM lemma: TransferOperator vacuum eq id."
+        },
+        {
+          "module": "Towers.YM.Transfer",
+          "theorem": "TheoremaAureum.Towers.YM.Transfer.correlation_decay_from_T",
+          "name": "correlation_decay_from_T",
+          "description": "YM lemma: correlation decay from T."
+        },
+        {
+          "module": "Towers.YM.Transfer",
+          "theorem": "TheoremaAureum.Towers.YM.Transfer.Perron_Frobenius_for_transfer",
+          "name": "Perron_Frobenius_for_transfer",
+          "description": "YM lemma: Perron Frobenius for transfer."
+        },
+        {
+          "module": "Towers.YM.Transfer",
+          "theorem": "TheoremaAureum.Towers.YM.Transfer.transfer_matrix_compact",
+          "name": "transfer_matrix_compact",
+          "description": "YM lemma: transfer matrix compact."
+        },
+        {
+          "module": "Towers.YM.Transfer",
+          "theorem": "TheoremaAureum.Towers.YM.Transfer.transfer_matrix_selfadjoint",
+          "name": "transfer_matrix_selfadjoint",
+          "description": "YM lemma: transfer matrix selfadjoint."
+        },
+        {
+          "module": "Towers.YM.VaradhanStripWidened",
+          "theorem": "TheoremaAureum.Towers.YM.VaradhanStripWidened.Heat_kernel_envelope_real_le_varadhan_geometric_widened_upper",
+          "name": "Heat_kernel_envelope_real_le_varadhan_geometric_widened_upper",
+          "description": "Geometric upper bound, widened strip [1/200,200]."
+        },
+        {
+          "module": "Towers.YM.VaradhanStripWidened",
+          "theorem": "TheoremaAureum.Towers.YM.VaradhanStripWidened.Heat_kernel_envelope_real_le_varadhan_widened",
+          "name": "Heat_kernel_envelope_real_le_varadhan_widened",
+          "description": "K(t) \u2264 C_w\u00b7e^{-c/t} on [1/200,200]."
+        },
+        {
+          "module": "Towers.YM.VaradhanStripWidened",
+          "theorem": "TheoremaAureum.Towers.YM.VaradhanStripWidened.Heat_kernel_envelope_real_le_varadhan_widened_upper",
+          "name": "Heat_kernel_envelope_real_le_varadhan_widened_upper",
+          "description": "Upper amplitude bound on widened-strip constant."
+        },
+        {
+          "module": "Towers.YM.VaradhanStripWidened",
+          "theorem": "TheoremaAureum.Towers.YM.VaradhanStripWidened.varadhan_t_lo_widened_lt",
+          "name": "varadhan_t_lo_widened_lt",
+          "description": "t_lo_widened < t_top_widened."
+        },
+        {
+          "module": "Towers.YM.VaradhanStripWidened",
+          "theorem": "TheoremaAureum.Towers.YM.VaradhanStripWidened.varadhan_t_top_lt_widened",
+          "name": "varadhan_t_top_lt_widened",
+          "description": "t_top < t_top_widened."
+        },
+        {
+          "module": "Towers.YM.W1_One_Seventh_Proof",
+          "theorem": "TheoremaAureum.Towers.YM.W1SeventhProof.w1_seven_lt",
+          "name": "w1_seven_lt",
+          "description": "SU(3) heat-trace / Tauberian: w1 seven lt."
+        },
+        {
+          "module": "Towers.YM.W1_One_Seventh_Proof",
+          "theorem": "TheoremaAureum.Towers.YM.W1SeventhProof.w1_seven_pos",
+          "name": "w1_seven_pos",
+          "description": "SU(3) heat-trace / Tauberian: w1 seven pos."
+        },
+        {
+          "module": "Towers.YM.Wall251b_H4",
+          "theorem": "TheoremaAureum.Towers.YM.Wall251b.su2_plaquetteEnergy_nonneg",
+          "name": "su2_plaquetteEnergy_nonneg",
+          "description": "YM lemma: su2 plaquetteEnergy nonneg."
+        },
+        {
+          "module": "Towers.YM.Wall251b_H4",
+          "theorem": "TheoremaAureum.Towers.YM.Wall251b.su2_plaquetteEnergy_pos_iff",
+          "name": "su2_plaquetteEnergy_pos_iff",
+          "description": "YM lemma: su2 plaquetteEnergy pos iff."
+        },
+        {
+          "module": "Towers.YM.Wall251b_H4",
+          "theorem": "TheoremaAureum.Towers.YM.Wall251b.su2_star_mul_self",
+          "name": "su2_star_mul_self",
+          "description": "YM lemma: su2 star mul self."
+        },
+        {
+          "module": "Towers.YM.Wall251b_H4",
+          "theorem": "TheoremaAureum.Towers.YM.Wall251b.su2_traceRe_eq_two_iff",
+          "name": "su2_traceRe_eq_two_iff",
+          "description": "YM lemma: su2 traceRe eq two iff."
+        },
+        {
+          "module": "Towers.YM.Wall251b_H4",
+          "theorem": "TheoremaAureum.Towers.YM.Wall251b.su2_traceRe_le_two",
+          "name": "su2_traceRe_le_two",
+          "description": "YM lemma: su2 traceRe le two."
+        },
+        {
+          "module": "Towers.YM.Wall251b_H4",
+          "theorem": "TheoremaAureum.Towers.YM.Wall251b.su2_wilson_hs_identity",
+          "name": "su2_wilson_hs_identity",
+          "description": "YM lemma: su2 wilson hs identity."
+        },
+        {
+          "module": "Towers.YM.Wall252_KP",
+          "theorem": "TheoremaAureum.Towers.YM.Wall252.kpModeWeight_lt",
+          "name": "kpModeWeight_lt",
+          "description": "YM lemma: kpModeWeight lt."
+        },
+        {
+          "module": "Towers.YM.Wall252_KP",
+          "theorem": "TheoremaAureum.Towers.YM.Wall252.kpModeWeight_nonneg",
+          "name": "kpModeWeight_nonneg",
+          "description": "YM lemma: kpModeWeight nonneg."
+        },
+        {
+          "module": "Towers.YM.Wall252_KP",
+          "theorem": "TheoremaAureum.Towers.YM.Wall252.kp_sum_lt_half",
+          "name": "kp_sum_lt_half",
+          "description": "YM lemma: kp sum lt half."
+        },
+        {
+          "module": "Towers.YM.Wall253_KP_Cluster",
+          "theorem": "TheoremaAureum.Towers.YM.Wall253.kp_cluster_criterion",
+          "name": "kp_cluster_criterion",
+          "description": "YM lemma: kp cluster criterion."
+        },
+        {
+          "module": "Towers.YM.Wall253_KP_Cluster",
+          "theorem": "TheoremaAureum.Towers.YM.Wall253.kp_cluster_sum_lt_two",
+          "name": "kp_cluster_sum_lt_two",
+          "description": "YM lemma: kp cluster sum lt two."
+        },
+        {
+          "module": "Towers.YM.Wall253_KP_Cluster",
+          "theorem": "TheoremaAureum.Towers.YM.Wall253.kp_cluster_summable",
+          "name": "kp_cluster_summable",
+          "description": "YM lemma: kp cluster summable."
+        },
+        {
+          "module": "Towers.YM.Wall253_KP_Cluster",
+          "theorem": "TheoremaAureum.Towers.YM.Wall253.kp_sum_lt_one",
+          "name": "kp_sum_lt_one",
+          "description": "YM lemma: kp sum lt one."
+        },
+        {
+          "module": "Towers.YM.Wall253_KP_Cluster",
+          "theorem": "TheoremaAureum.Towers.YM.Wall253.kp_sum_nonneg",
+          "name": "kp_sum_nonneg",
+          "description": "YM lemma: kp sum nonneg."
+        },
+        {
+          "module": "Towers.YM.Wall254_OS_Positivity",
+          "theorem": "TheoremaAureum.Towers.YM.Wall254.gram_form_eq",
+          "name": "gram_form_eq",
+          "description": "YM lemma: gram form eq."
+        },
+        {
+          "module": "Towers.YM.Wall254_OS_Positivity",
+          "theorem": "TheoremaAureum.Towers.YM.Wall254.gram_re_nonneg",
+          "name": "gram_re_nonneg",
+          "description": "YM lemma: gram re nonneg."
+        },
+        {
+          "module": "Towers.YM.Wall254_OS_Positivity",
+          "theorem": "TheoremaAureum.Towers.YM.Wall254.os2_diagonal_nonneg",
+          "name": "os2_diagonal_nonneg",
+          "description": "YM lemma: os2 diagonal nonneg."
+        },
+        {
+          "module": "Towers.YM.Wall254_OS_Positivity",
+          "theorem": "TheoremaAureum.Towers.YM.Wall254.os2_of_gram_realization",
+          "name": "os2_of_gram_realization",
+          "description": "YM lemma: os2 of gram realization."
+        },
+        {
+          "module": "Towers.YM.Wall255_JensenObstruction",
+          "theorem": "TheoremaAureum.Towers.YM.Wall255Jensen.e_bar_le_two",
+          "name": "e_bar_le_two",
+          "description": "YM lemma: e bar le two."
+        },
+        {
+          "module": "Towers.YM.Wall255_JensenObstruction",
+          "theorem": "TheoremaAureum.Towers.YM.Wall255Jensen.e_bar_pos_of_meanEnergy_pos",
+          "name": "e_bar_pos_of_meanEnergy_pos",
+          "description": "YM lemma: e bar pos of meanEnergy pos."
+        },
+        {
+          "module": "Towers.YM.Wall255_JensenObstruction",
+          "theorem": "TheoremaAureum.Towers.YM.Wall255Jensen.inv8_pow_eq_exp_neg",
+          "name": "inv8_pow_eq_exp_neg",
+          "description": "YM lemma: inv8 pow eq exp neg."
+        },
+        {
+          "module": "Towers.YM.Wall255_JensenObstruction",
+          "theorem": "TheoremaAureum.Towers.YM.Wall255Jensen.jensen_obstruction",
+          "name": "jensen_obstruction",
+          "description": "YM lemma: jensen obstruction."
+        },
+        {
+          "module": "Towers.YM.Wall255_JensenObstruction",
+          "theorem": "TheoremaAureum.Towers.YM.Wall255Jensen.meanEnergy_le_two_card",
+          "name": "meanEnergy_le_two_card",
+          "description": "YM lemma: meanEnergy le two card."
+        },
+        {
+          "module": "Towers.YM.Wall255_JensenObstruction",
+          "theorem": "TheoremaAureum.Towers.YM.Wall255Jensen.meanEnergy_nonneg",
+          "name": "meanEnergy_nonneg",
+          "description": "YM lemma: meanEnergy nonneg."
+        },
+        {
+          "module": "Towers.YM.Wall255_JensenObstruction",
+          "theorem": "TheoremaAureum.Towers.YM.Wall255Jensen.mean_threshold_fails",
+          "name": "mean_threshold_fails",
+          "description": "YM lemma: mean threshold fails."
+        },
+        {
+          "module": "Towers.YM.Wall255_JensenObstruction",
+          "theorem": "TheoremaAureum.Towers.YM.Wall255Jensen.plaquetteEnergy_le_two",
+          "name": "plaquetteEnergy_le_two",
+          "description": "YM lemma: plaquetteEnergy le two."
+        },
+        {
+          "module": "Towers.YM.Wall255_JensenObstruction",
+          "theorem": "TheoremaAureum.Towers.YM.Wall255Jensen.polymerEnergy_le_two_card",
+          "name": "polymerEnergy_le_two_card",
+          "description": "YM lemma: polymerEnergy le two card."
+        },
+        {
+          "module": "Towers.YM.Wall255_KP_Entropy",
+          "theorem": "TheoremaAureum.Towers.YM.Wall255.entropy_geometric_summable",
+          "name": "entropy_geometric_summable",
+          "description": "YM lemma: entropy geometric summable."
+        },
+        {
+          "module": "Towers.YM.Wall255_KP_Entropy",
+          "theorem": "TheoremaAureum.Towers.YM.Wall255.entropy_geometric_tsum",
+          "name": "entropy_geometric_tsum",
+          "description": "YM lemma: entropy geometric tsum."
+        },
+        {
+          "module": "Towers.YM.Wall255_KP_Entropy",
+          "theorem": "TheoremaAureum.Towers.YM.Wall255.kp_entropy_weighted_summable",
+          "name": "kp_entropy_weighted_summable",
+          "description": "YM lemma: kp entropy weighted summable."
+        },
+        {
+          "module": "Towers.YM.Wall255_KP_Entropy",
+          "theorem": "TheoremaAureum.Towers.YM.Wall255.kp_polymer_entropy_weighted_summable",
+          "name": "kp_polymer_entropy_weighted_summable",
+          "description": "YM lemma: kp polymer entropy weighted summable."
+        },
+        {
+          "module": "Towers.YM.Wall255_KP_Entropy",
+          "theorem": "TheoremaAureum.Towers.YM.Wall255.seven_half_not_lt_one",
+          "name": "seven_half_not_lt_one",
+          "description": "YM lemma: seven half not lt one."
+        },
+        {
+          "module": "Towers.YM.Wall255_KP_Entropy",
+          "theorem": "TheoremaAureum.Towers.YM.Wall255.seven_q_lt_one_of_lt_inv_seven",
+          "name": "seven_q_lt_one_of_lt_inv_seven",
+          "description": "YM lemma: seven q lt one of lt inv seven."
+        },
+        {
+          "module": "Towers.YM.Wall256_MassGapConditional",
+          "theorem": "TheoremaAureum.Towers.YM.Wall256.mass_gap_pos_of_spectral_gap",
+          "name": "mass_gap_pos_of_spectral_gap",
+          "description": "YM lemma: mass gap pos of spectral gap."
+        },
+        {
+          "module": "Towers.YM.Wall256_MassGapConditional",
+          "theorem": "TheoremaAureum.Towers.YM.Wall256.neg_log_pos_of_lt_one",
+          "name": "neg_log_pos_of_lt_one",
+          "description": "YM lemma: neg log pos of lt one."
+        },
+        {
+          "module": "Towers.YM.Wall256_MassGapConditional",
+          "theorem": "TheoremaAureum.Towers.YM.Wall256.rpow_eq_exp_neg_rate",
+          "name": "rpow_eq_exp_neg_rate",
+          "description": "YM lemma: rpow eq exp neg rate."
+        },
+        {
+          "module": "Towers.YM.Wall256_Note",
+          "theorem": "TheoremaAureum.Towers.YM.Wall256Note.kp_summable_of_truncatedActivity",
+          "name": "kp_summable_of_truncatedActivity",
+          "description": "YM lemma: kp summable of truncatedActivity."
+        },
+        {
+          "module": "Towers.YM.Wall256_Note",
+          "theorem": "TheoremaAureum.Towers.YM.Wall256Note.su2_gap_of_truncatedActivity",
+          "name": "su2_gap_of_truncatedActivity",
+          "description": "YM lemma: su2 gap of truncatedActivity."
+        },
+        {
+          "module": "Towers.YM.Wall256_RateFunction",
+          "theorem": "TheoremaAureum.Towers.YM.Wall256Rate.entropy_threshold_eq",
+          "name": "entropy_threshold_eq",
+          "description": "YM lemma: entropy threshold eq."
+        },
+        {
+          "module": "Towers.YM.Wall256_RateFunction",
+          "theorem": "TheoremaAureum.Towers.YM.Wall256Rate.exp_neg_lt_inv_seven_iff",
+          "name": "exp_neg_lt_inv_seven_iff",
+          "description": "YM lemma: exp neg lt inv seven iff."
+        },
+        {
+          "module": "Towers.YM.Wall256_RateFunction",
+          "theorem": "TheoremaAureum.Towers.YM.Wall256Rate.kp_polymer_rate_summable",
+          "name": "kp_polymer_rate_summable",
+          "description": "YM lemma: kp polymer rate summable."
+        },
+        {
+          "module": "Towers.YM.Wall256_RateFunction",
+          "theorem": "TheoremaAureum.Towers.YM.Wall256Rate.kp_rate_summable",
+          "name": "kp_rate_summable",
+          "description": "YM lemma: kp rate summable."
+        },
+        {
+          "module": "Towers.YM.Wall256_RateFunction",
+          "theorem": "TheoremaAureum.Towers.YM.Wall256Rate.le_rateFn",
+          "name": "le_rateFn",
+          "description": "YM lemma: le rateFn."
+        },
+        {
+          "module": "Towers.YM.Wall256_RateFunction",
+          "theorem": "TheoremaAureum.Towers.YM.Wall256Rate.log_seven_pos",
+          "name": "log_seven_pos",
+          "description": "YM lemma: log seven pos."
+        },
+        {
+          "module": "Towers.YM.Wall256_RateFunction",
+          "theorem": "TheoremaAureum.Towers.YM.Wall256Rate.mean_rate_fails_criterion",
+          "name": "mean_rate_fails_criterion",
+          "description": "YM lemma: mean rate fails criterion."
+        },
+        {
+          "module": "Towers.YM.Wall256_RateFunction",
+          "theorem": "TheoremaAureum.Towers.YM.Wall256Rate.rate_beats_entropy",
+          "name": "rate_beats_entropy",
+          "description": "YM lemma: rate beats entropy."
+        },
+        {
+          "module": "Towers.YM.Wall256_RateFunction",
+          "theorem": "TheoremaAureum.Towers.YM.Wall256Rate.rate_tsum",
+          "name": "rate_tsum",
+          "description": "YM lemma: rate tsum."
+        },
+        {
+          "module": "Towers.YM.Wall256_RateFunction",
+          "theorem": "TheoremaAureum.Towers.YM.Wall256Rate.seven_exp_neg_lt_one_iff",
+          "name": "seven_exp_neg_lt_one_iff",
+          "description": "YM lemma: seven exp neg lt one iff."
+        },
+        {
+          "module": "Towers.YM.Wall257_RateLowerBound",
+          "theorem": "TheoremaAureum.Towers.YM.Wall257Rate.bddAbove_slopes",
+          "name": "bddAbove_slopes",
+          "description": "YM lemma: bddAbove slopes."
+        },
+        {
+          "module": "Towers.YM.Wall257_RateLowerBound",
+          "theorem": "TheoremaAureum.Towers.YM.Wall257Rate.exists_rate_gt_log_seven",
+          "name": "exists_rate_gt_log_seven",
+          "description": "YM lemma: exists rate gt log seven."
+        },
+        {
+          "module": "Towers.YM.Wall257_RateLowerBound",
+          "theorem": "TheoremaAureum.Towers.YM.Wall257Rate.I_E_unbounded",
+          "name": "I_E_unbounded",
+          "description": "YM lemma: I E unbounded."
+        },
+        {
+          "module": "Towers.YM.Wall257_RateLowerBound",
+          "theorem": "TheoremaAureum.Towers.YM.Wall257Rate.quarter_sq_le_I_E",
+          "name": "quarter_sq_le_I_E",
+          "description": "YM lemma: quarter sq le I E."
+        },
+        {
+          "module": "Towers.YM.Wall257_RateLowerBound",
+          "theorem": "TheoremaAureum.Towers.YM.Wall257Rate.rate_gap_single_site_vs_polymer",
+          "name": "rate_gap_single_site_vs_polymer",
+          "description": "YM lemma: rate gap single site vs polymer."
+        },
+        {
+          "module": "Towers.YM.Wall257_StrongCoupling",
+          "theorem": "TheoremaAureum.Towers.YM.Wall257.exp_neg_mul_le_inv8_pow",
+          "name": "exp_neg_mul_le_inv8_pow",
+          "description": "YM lemma: exp neg mul le inv8 pow."
+        },
+        {
+          "module": "Towers.YM.Wall257_StrongCoupling",
+          "theorem": "TheoremaAureum.Towers.YM.Wall257.inv8_pow_eq_exp_neg",
+          "name": "inv8_pow_eq_exp_neg",
+          "description": "YM lemma: inv8 pow eq exp neg."
+        },
+        {
+          "module": "Towers.YM.Wall257_StrongCoupling",
+          "theorem": "TheoremaAureum.Towers.YM.Wall257.inv8_pow_le_inv7_pow",
+          "name": "inv8_pow_le_inv7_pow",
+          "description": "YM lemma: inv8 pow le inv7 pow."
+        },
+        {
+          "module": "Towers.YM.Wall257_StrongCoupling",
+          "theorem": "TheoremaAureum.Towers.YM.Wall257.polymerActivity_le_inv7_of_energy_lb",
+          "name": "polymerActivity_le_inv7_of_energy_lb",
+          "description": "YM lemma: polymerActivity le inv7 of energy lb."
+        },
+        {
+          "module": "Towers.YM.Wall257_StrongCoupling",
+          "theorem": "TheoremaAureum.Towers.YM.Wall257.polymerActivity_le_inv8_of_energy_lb",
+          "name": "polymerActivity_le_inv8_of_energy_lb",
+          "description": "YM lemma: polymerActivity le inv8 of energy lb."
+        },
+        {
+          "module": "Towers.YM.Wall257_StrongCoupling",
+          "theorem": "TheoremaAureum.Towers.YM.Wall257.polymerEnergy_vacuum_eq_zero",
+          "name": "polymerEnergy_vacuum_eq_zero",
+          "description": "YM lemma: polymerEnergy vacuum eq zero."
+        },
+        {
+          "module": "Towers.YM.Wall257_StrongCoupling",
+          "theorem": "TheoremaAureum.Towers.YM.Wall257.vacuum_breaks_energy_lb",
+          "name": "vacuum_breaks_energy_lb",
+          "description": "YM lemma: vacuum breaks energy lb."
+        },
+        {
+          "module": "Towers.YM.Wall258_DependenceDefect",
+          "theorem": "TheoremaAureum.Towers.YM.Wall258.dependence_defect_kp_summable",
+          "name": "dependence_defect_kp_summable",
+          "description": "YM lemma: dependence defect kp summable."
+        },
+        {
+          "module": "Towers.YM.Wall258_DependenceDefect",
+          "theorem": "TheoremaAureum.Towers.YM.Wall258.dependence_defect_kp_summable_Z4",
+          "name": "dependence_defect_kp_summable_Z4",
+          "description": "YM lemma: dependence defect kp summable Z4."
+        },
+        {
+          "module": "Towers.YM.Wall258_DependenceDefect",
+          "theorem": "TheoremaAureum.Towers.YM.Wall258.linkIncidence_four",
+          "name": "linkIncidence_four",
+          "description": "YM lemma: linkIncidence four."
+        },
+        {
+          "module": "Towers.YM.Wall258_DependenceDefect",
+          "theorem": "TheoremaAureum.Towers.YM.Wall258.rate_clears_after_defect",
+          "name": "rate_clears_after_defect",
+          "description": "YM lemma: rate clears after defect."
+        },
+        {
+          "module": "Towers.YM.Wall258_DependenceDefect",
+          "theorem": "TheoremaAureum.Towers.YM.Wall258.threshold_mono",
+          "name": "threshold_mono",
+          "description": "YM lemma: threshold mono."
+        },
+        {
+          "module": "Towers.YM.Wall259_DependenceBound",
+          "theorem": "TheoremaAureum.Towers.YM.Wall259.defect_eq",
+          "name": "defect_eq",
+          "description": "YM lemma: defect eq."
+        },
+        {
+          "module": "Towers.YM.Wall259_DependenceBound",
+          "theorem": "TheoremaAureum.Towers.YM.Wall259.dependence_bound_kp_summable",
+          "name": "dependence_bound_kp_summable",
+          "description": "YM lemma: dependence bound kp summable."
+        },
+        {
+          "module": "Towers.YM.Wall259_DependenceBound",
+          "theorem": "TheoremaAureum.Towers.YM.Wall259.polymer_criterion_of_single_site",
+          "name": "polymer_criterion_of_single_site",
+          "description": "YM lemma: polymer criterion of single site."
+        },
+        {
+          "module": "Towers.YM.Wall259_DependenceBound",
+          "theorem": "TheoremaAureum.Towers.YM.Wall259.polymer_criterion_of_threshold",
+          "name": "polymer_criterion_of_threshold",
+          "description": "YM lemma: polymer criterion of threshold."
+        },
+        {
+          "module": "Towers.YM.Wall259_DependenceBound",
+          "theorem": "TheoremaAureum.Towers.YM.Wall259.polymerRate_eq",
+          "name": "polymerRate_eq",
+          "description": "YM lemma: polymerRate eq."
+        },
+        {
+          "module": "Towers.YM.Wall260_ClayReduction",
+          "theorem": "TheoremaAureum.Towers.YM.Wall260.link_incidence_number_4d",
+          "name": "link_incidence_number_4d",
+          "description": "YM lemma: link incidence number 4d."
+        },
+        {
+          "module": "Towers.YM.Wall260_ClayReduction",
+          "theorem": "TheoremaAureum.Towers.YM.Wall260.new_clay_reduction",
+          "name": "new_clay_reduction",
+          "description": "YM lemma: new clay reduction."
+        },
+        {
+          "module": "Towers.YM.Wall260_ClayReduction",
+          "theorem": "TheoremaAureum.Towers.YM.Wall260.new_clay_reduction_Z4",
+          "name": "new_clay_reduction_Z4",
+          "description": "YM lemma: new clay reduction Z4."
+        },
+        {
+          "module": "Towers.YM.Wall260_ClayReduction",
+          "theorem": "TheoremaAureum.Towers.YM.Wall260.threshold_split",
+          "name": "threshold_split",
+          "description": "YM lemma: threshold split."
+        },
+        {
+          "module": "Towers.YM.Wall261_H4Defect",
+          "theorem": "TheoremaAureum.Towers.YM.Wall261.graph_gap_pos",
+          "name": "graph_gap_pos",
+          "description": "YM lemma: graph gap pos."
+        },
+        {
+          "module": "Towers.YM.Wall261_H4Defect",
+          "theorem": "TheoremaAureum.Towers.YM.Wall261.h4_clay_reduction",
+          "name": "h4_clay_reduction",
+          "description": "YM lemma: h4 clay reduction."
+        },
+        {
+          "module": "Towers.YM.Wall261_H4Defect",
+          "theorem": "TheoremaAureum.Towers.YM.Wall261.h4_defect_beats_z4",
+          "name": "h4_defect_beats_z4",
+          "description": "YM lemma: h4 defect beats z4."
+        },
+        {
+          "module": "Towers.YM.Wall261_H4Defect",
+          "theorem": "TheoremaAureum.Towers.YM.Wall261.h4_threshold_lt_z4",
+          "name": "h4_threshold_lt_z4",
+          "description": "YM lemma: h4 threshold lt z4."
+        },
+        {
+          "module": "Towers.YM.Wall261_H4Defect",
+          "theorem": "TheoremaAureum.Towers.YM.Wall261.one_add_phi_lt_six",
+          "name": "one_add_phi_lt_six",
+          "description": "YM lemma: one add phi lt six."
+        },
+        {
+          "module": "Towers.YM.Wall261_H4Defect",
+          "theorem": "TheoremaAureum.Towers.YM.Wall261.phi_sq_eq",
+          "name": "phi_sq_eq",
+          "description": "YM lemma: phi sq eq."
+        },
+        {
+          "module": "Towers.YM.Wall262a_RatioModel",
+          "theorem": "TheoremaAureum.Towers.YM.Wall262a.exp_neg88_lower",
+          "name": "exp_neg88_lower",
+          "description": "YM lemma: exp neg88 lower."
+        },
+        {
+          "module": "Towers.YM.Wall262a_RatioModel",
+          "theorem": "TheoremaAureum.Towers.YM.Wall262a.factorial_smooth",
+          "name": "factorial_smooth",
+          "description": "YM lemma: factorial smooth."
+        },
+        {
+          "module": "Towers.YM.Wall262a_RatioModel",
+          "theorem": "TheoremaAureum.Towers.YM.Wall262a.Hweight_nonneg",
+          "name": "Hweight_nonneg",
+          "description": "YM lemma: Hweight nonneg."
+        },
+        {
+          "module": "Towers.YM.Wall262a_RatioModel",
+          "theorem": "TheoremaAureum.Towers.YM.Wall262a.Hweight_values",
+          "name": "Hweight_values",
+          "description": "YM lemma: Hweight values."
+        },
+        {
+          "module": "Towers.YM.Wall262a_RatioModel",
+          "theorem": "TheoremaAureum.Towers.YM.Wall262a.R_le",
+          "name": "R_le",
+          "description": "YM lemma: R le."
+        },
+        {
+          "module": "Towers.YM.Wall262a_RatioModel",
+          "theorem": "TheoremaAureum.Towers.YM.Wall262a.R_le_one_sub_half",
+          "name": "R_le_one_sub_half",
+          "description": "YM lemma: R le one sub half."
+        },
+        {
+          "module": "Towers.YM.Wall262a_RatioModel",
+          "theorem": "TheoremaAureum.Towers.YM.Wall262a.seven_enters_at_seven",
+          "name": "seven_enters_at_seven",
+          "description": "YM lemma: seven enters at seven."
+        },
+        {
+          "module": "Towers.YM.Wall262a_RatioModel",
+          "theorem": "TheoremaAureum.Towers.YM.Wall262a.term_nonneg",
+          "name": "term_nonneg",
+          "description": "YM lemma: term nonneg."
+        },
+        {
+          "module": "Towers.YM.Wall262a_RatioModel",
+          "theorem": "TheoremaAureum.Towers.YM.Wall262a.threshold_factorization",
+          "name": "threshold_factorization",
+          "description": "YM lemma: threshold factorization."
+        },
+        {
+          "module": "Towers.YM.Wall262_ConnectiveRatio",
+          "theorem": "TheoremaAureum.Towers.YM.Wall262.defect_bound_arith",
+          "name": "defect_bound_arith",
+          "description": "YM lemma: defect bound arith."
+        },
+        {
+          "module": "Towers.YM.Wall262_ConnectiveRatio",
+          "theorem": "TheoremaAureum.Towers.YM.Wall262.defect_lt",
+          "name": "defect_lt",
+          "description": "YM lemma: defect lt."
+        },
+        {
+          "module": "Towers.YM.Wall262_ConnectiveRatio",
+          "theorem": "TheoremaAureum.Towers.YM.Wall262.exp_lower",
+          "name": "exp_lower",
+          "description": "YM lemma: exp lower."
+        },
+        {
+          "module": "Towers.YM.Wall262_ConnectiveRatio",
+          "theorem": "TheoremaAureum.Towers.YM.Wall262.phi_lt",
+          "name": "phi_lt",
+          "description": "YM lemma: phi lt."
+        },
+        {
+          "module": "Towers.YM.Wall262_ConnectiveRatio",
+          "theorem": "TheoremaAureum.Towers.YM.Wall262.su2_wins",
+          "name": "su2_wins",
+          "description": "YM lemma: su2 wins."
+        },
+        {
+          "module": "Towers.YM.Wall262_ConnectiveRatio",
+          "theorem": "TheoremaAureum.Towers.YM.Wall262.threshold_factorization",
+          "name": "threshold_factorization",
+          "description": "YM lemma: threshold factorization."
+        },
+        {
+          "module": "Towers.YM.Wall263_CoxeterSpectral",
+          "theorem": "TheoremaAureum.Towers.YM.Wall263.coxeterCharpoly_phi",
+          "name": "coxeterCharpoly_phi",
+          "description": "YM lemma: coxeterCharpoly phi."
+        },
+        {
+          "module": "Towers.YM.Wall263_CoxeterSpectral",
+          "theorem": "TheoremaAureum.Towers.YM.Wall263.defect_bound_H4",
+          "name": "defect_bound_H4",
+          "description": "YM lemma: defect bound H4."
+        },
+        {
+          "module": "Towers.YM.Wall263_CoxeterSpectral",
+          "theorem": "TheoremaAureum.Towers.YM.Wall263.one_lt_phi",
+          "name": "one_lt_phi",
+          "description": "YM lemma: one lt phi."
+        },
+        {
+          "module": "Towers.YM.Wall263_CoxeterSpectral",
+          "theorem": "TheoremaAureum.Towers.YM.Wall263.phi_lt_two",
+          "name": "phi_lt_two",
+          "description": "YM lemma: phi lt two."
+        },
+        {
+          "module": "Towers.YM.Wall263_CoxeterSpectral",
+          "theorem": "TheoremaAureum.Towers.YM.Wall263.phi_not_root",
+          "name": "phi_not_root",
+          "description": "YM lemma: phi not root."
+        },
+        {
+          "module": "Towers.YM.WeylDim",
+          "theorem": "TheoremaAureum.Towers.YM.WeylDim.dim_cubic_bound",
+          "name": "dim_cubic_bound",
+          "description": "YM lemma: dim cubic bound."
+        },
+        {
+          "module": "Towers.YM.WilsonAction",
+          "theorem": "TheoremaAureum.Towers.YM.LatticeGauge.plaquetteEnergy_const_one",
+          "name": "plaquetteEnergy_const_one",
+          "description": "Wilson action / plaquette lemma: plaquetteEnergy const one."
+        },
+        {
+          "module": "Towers.YM.WilsonAction",
+          "theorem": "TheoremaAureum.Towers.YM.LatticeGauge.wilsonAction_const_one_eq_zero",
+          "name": "wilsonAction_const_one_eq_zero",
+          "description": "Wilson action / plaquette lemma: wilsonAction const one eq zero."
+        },
+        {
+          "module": "Towers.YM.WilsonAction",
+          "theorem": "TheoremaAureum.Towers.YM.LatticeGauge.wilsonAction_zero_beta",
+          "name": "wilsonAction_zero_beta",
+          "description": "Wilson action / plaquette lemma: wilsonAction zero beta."
+        },
+        {
+          "module": "Towers.YM.WilsonAction",
+          "theorem": "TheoremaAureum.Towers.YM.LatticeGauge.wilsonPlaquette_const_one",
+          "name": "wilsonPlaquette_const_one",
+          "description": "Wilson action / plaquette lemma: wilsonPlaquette const one."
+        },
+        {
+          "module": "Towers.YM.WilsonPositivitySU2",
+          "theorem": "TheoremaAureum.Towers.YM.LatticeGauge.hsNormSq2_eq_zero_iff",
+          "name": "hsNormSq2_eq_zero_iff",
+          "description": "Wilson action / plaquette lemma: hsNormSq2 eq zero iff."
+        },
+        {
+          "module": "Towers.YM.WilsonPositivitySU2",
+          "theorem": "TheoremaAureum.Towers.YM.LatticeGauge.hsNormSq2_sub_one_eq",
+          "name": "hsNormSq2_sub_one_eq",
+          "description": "Wilson action / plaquette lemma: hsNormSq2 sub one eq."
+        },
+        {
+          "module": "Towers.YM.WilsonPositivitySU2",
+          "theorem": "TheoremaAureum.Towers.YM.LatticeGauge.plaquetteEnergy2_nonneg",
+          "name": "plaquetteEnergy2_nonneg",
+          "description": "W(U) \u2265 0 for all gauge configurations U."
+        },
+        {
+          "module": "Towers.YM.WilsonPositivitySU2",
+          "theorem": "TheoremaAureum.Towers.YM.LatticeGauge.plaquetteEnergy2_pos_iff",
+          "name": "plaquetteEnergy2_pos_iff",
+          "description": "Wilson action / plaquette lemma: plaquetteEnergy2 pos iff."
+        },
+        {
+          "module": "Towers.YM.WilsonPositivitySU2",
+          "theorem": "TheoremaAureum.Towers.YM.LatticeGauge.traceRe_eq_two_iff",
+          "name": "traceRe_eq_two_iff",
+          "description": "Wilson action / plaquette lemma: traceRe eq two iff."
+        },
+        {
+          "module": "Towers.YM.WilsonPositivitySU2",
+          "theorem": "TheoremaAureum.Towers.YM.LatticeGauge.traceRe_le_two",
+          "name": "traceRe_le_two",
+          "description": "Wilson action / plaquette lemma: traceRe le two."
+        },
+        {
+          "module": "Towers.YM.WilsonPositivity",
+          "theorem": "TheoremaAureum.Towers.YM.LatticeGauge.hsNormSq_eq_zero_iff",
+          "name": "hsNormSq_eq_zero_iff",
+          "description": "Wilson action / plaquette lemma: hsNormSq eq zero iff."
+        },
+        {
+          "module": "Towers.YM.WilsonPositivity",
+          "theorem": "TheoremaAureum.Towers.YM.LatticeGauge.plaquetteEnergy_nonneg",
+          "name": "plaquetteEnergy_nonneg",
+          "description": "W(U) \u2265 0 for all gauge configurations U."
+        },
+        {
+          "module": "Towers.YM.WilsonPositivity",
+          "theorem": "TheoremaAureum.Towers.YM.LatticeGauge.plaquetteEnergy_pos_iff",
+          "name": "plaquetteEnergy_pos_iff",
+          "description": "Wilson action / plaquette lemma: plaquetteEnergy pos iff."
+        },
+        {
+          "module": "Towers.YM.WilsonPositivity",
+          "theorem": "TheoremaAureum.Towers.YM.LatticeGauge.traceRe_eq_three_iff",
+          "name": "traceRe_eq_three_iff",
+          "description": "Wilson action / plaquette lemma: traceRe eq three iff."
+        },
+        {
+          "module": "Towers.YM.WilsonPositivity",
+          "theorem": "TheoremaAureum.Towers.YM.LatticeGauge.traceRe_le_three",
+          "name": "traceRe_le_three",
+          "description": "Re(tr(U)) \u2264 3 for U\u2208SU(3)."
+        },
+        {
+          "module": "Towers.YM.WilsonPositivity",
+          "theorem": "TheoremaAureum.Towers.YM.LatticeGauge.wilsonAction_pos_of_nontrivial",
+          "name": "wilsonAction_pos_of_nontrivial",
+          "description": "W(U) > 0 for non-trivial configurations."
+        },
+        {
+          "module": "Towers.YM.WilsonPositivity",
+          "theorem": "TheoremaAureum.Towers.YM.LatticeGauge.wilsonPlaquette_star_mul_self",
+          "name": "wilsonPlaquette_star_mul_self",
+          "description": "P\u2020\u00b7P = I for plaquettes (star-product identity)."
+        },
+        {
+          "module": "Towers.YM.Wilson",
+          "theorem": "TheoremaAureum.Towers.YM.Wilson.plaquetteMat_trivial",
+          "name": "plaquetteMat_trivial",
+          "description": "Trivial plaquette matrix evaluates correctly."
+        },
+        {
+          "module": "Towers.YM.Wilson",
+          "theorem": "TheoremaAureum.Towers.YM.Wilson.wDensity_nonneg",
+          "name": "wDensity_nonneg",
+          "description": "W(U) \u2265 0 for all gauge configurations U."
+        },
+        {
+          "module": "Towers.YM.Wilson",
+          "theorem": "TheoremaAureum.Towers.YM.Wilson.wDensity_trivial_eq_zero",
+          "name": "wDensity_trivial_eq_zero",
+          "description": "W(trivial config) = 0 (all plaquettes identity)."
+        },
+        {
+          "module": "Towers.YM.Wilson",
+          "theorem": "TheoremaAureum.Towers.YM.Wilson.WilsonAction_nonneg",
+          "name": "WilsonAction_nonneg",
+          "description": "W(U) \u2265 0 for all gauge configurations U."
+        },
+        {
+          "module": "Towers.YM.Wilson",
+          "theorem": "TheoremaAureum.Towers.YM.Wilson.WilsonAction_trivial_eq_zero",
+          "name": "WilsonAction_trivial_eq_zero",
+          "description": "W(trivial config) = 0 (all plaquettes identity)."
+        },
+        {
+          "module": "Towers.YM.Wilson",
+          "theorem": "TheoremaAureum.Towers.YM.Wilson.YMHamiltonian_real_nonneg",
+          "name": "YMHamiltonian_real_nonneg",
+          "description": "W(U) \u2265 0 for all gauge configurations U."
+        },
+        {
+          "module": "Towers.YM.Wilson",
+          "theorem": "TheoremaAureum.Towers.YM.Wilson.YMHamiltonian_real_trivial_eq_zero",
+          "name": "YMHamiltonian_real_trivial_eq_zero",
+          "description": "W(trivial config) = 0 (all plaquettes identity)."
+        }
+      ]
+    }
+  ]
+}
