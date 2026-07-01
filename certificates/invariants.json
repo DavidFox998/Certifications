@@ -6417,9 +6417,29 @@
     "sha_b158_src": "4cc0fa04bde1ebe815cd31d19e909753360f1d43dbb2a6d3117245552a3add58",
     "status": "PUBLISHED"
   },
+  "opera_numerorum_master_v2": {
+    "file": "certificates/OperaNumerorum_MasterEquations.pdf",
+    "sha256": "684ceb1a21be07e60a4baa80530d91110c40d3114b4032e42b6d6c8825bed226",
+    "version": "v2",
+    "sections": 14,
+    "generated_utc": "2026-07-01",
+    "new_sections": [
+      "11. The Opera Numerorum Methodology [QEEC error-controlled formal mathematics]",
+      "12. Morningstar Engineering Equations [QSig, Seven Cores, Prime Laws -- FIREWALL]"
+    ],
+    "superbric_path": "github.com/DavidFox998/morningstar-project/Protocol/superbrick.lean",
+    "builder": "certificates/build_opera_numerorum_master.py",
+    "push_status": "13/13 repos OK -- 2026-07-01",
+    "repos": [
+      "arakelov-positivity-rh-core", "yang-mills-gap", "rh-p5-bridge-14",
+      "birch-swinnerton-dyer-143", "navier-stokes", "p-vs-np",
+      "morningstar-project", "bost-connes", "lindelof-14",
+      "lindelof-mu-bound", "opera-sieve", "Certifications", "pistus-theoria"
+    ]
+  },
   "master_equations_pdf": {
     "file": "certificates/OperaNumerorum_MasterEquations.pdf",
-    "sha256": "cf3bdaac342c4ab2882d403b4bcd2a1aa8318ea71064ac856599c55aaf670735",
+    "sha256": "684ceb1a21be07e60a4baa80530d91110c40d3114b4032e42b6d6c8825bed226",
     "sha256_v1": "65a793875fac6a3b0d232c8c6f8e6cc0b97d6f06f6bc57e87ee8cbadce323264",
     "description": "Opera Numerorum Master Equations -- all empirical math, 14 sections (v2, July 1 2026)",
     "sections": [
