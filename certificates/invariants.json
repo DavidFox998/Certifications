@@ -6419,7 +6419,7 @@
   },
   "opera_numerorum_master_v2": {
     "file": "certificates/OperaNumerorum_MasterEquations.pdf",
-    "sha256": "684ceb1a21be07e60a4baa80530d91110c40d3114b4032e42b6d6c8825bed226",
+    "sha256": "7f6b31b4469ebdbd59d03979c1f1c9b4c617bef4e88ed392c70c87dcb8fa0970",
     "version": "v2",
     "sections": 14,
     "generated_utc": "2026-07-01",
@@ -6439,7 +6439,7 @@
   },
   "master_equations_pdf": {
     "file": "certificates/OperaNumerorum_MasterEquations.pdf",
-    "sha256": "684ceb1a21be07e60a4baa80530d91110c40d3114b4032e42b6d6c8825bed226",
+    "sha256": "7f6b31b4469ebdbd59d03979c1f1c9b4c617bef4e88ed392c70c87dcb8fa0970",
     "sha256_v1": "65a793875fac6a3b0d232c8c6f8e6cc0b97d6f06f6bc57e87ee8cbadce323264",
     "description": "Opera Numerorum Master Equations -- all empirical math, 14 sections (v2, July 1 2026)",
     "sections": [
