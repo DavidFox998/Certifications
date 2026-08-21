@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22040962.svg)](https://doi.org/10.5281/zenodo.22040962)
+
 # Theorema Aureum 143 — Certifications
 
 **Morning Star Project · Volume I · Certificate Ledger**
