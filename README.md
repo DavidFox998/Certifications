@@ -40,3 +40,7 @@
 ---
 
 *Author: D. Fox · ORCID 0009-0008-1290-6105 · Entangled Technologies*
+
+---
+
+**Ensemble entry point:** [rh-p5-bridge-14](https://github.com/DavidFox998/rh-p5-bridge-14)
