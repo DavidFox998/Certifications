@@ -1,0 +1,36 @@
+{
+  "title": "Opera Numerorum — Machine-Checked Lean 4 Certification Ledger",
+  "upload_type": "software",
+  "description": "Lean 4 formalization of the machine-checked certification ledger collecting Lean 4 audit certificates for the Opera Numerorum mathematical ensemble. This repository is part of David Fox's Opera Numerorum ensemble.",
+  "creators": [
+    {
+      "name": "Fox, David",
+      "affiliation": "Opera Numerorum",
+      "orcid": "0009-0008-1290-6105"
+    }
+  ],
+  "license": "MIT",
+  "keywords": [
+    "Opera Numerorum",
+    "Lean 4",
+    "formal verification",
+    "machine-checked certificates",
+    "proof audit",
+    "Riemann Hypothesis",
+    "Birch–Swinnerton-Dyer conjecture"
+  ],
+  "access_right": "open",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/DavidFox998/Certifications",
+      "relation": "isSupplementTo",
+      "resource_type": "software"
+    }
+  ],
+  "communities": [
+    {
+      "identifier": "lean"
+    }
+  ],
+  "language": "en"
+}
