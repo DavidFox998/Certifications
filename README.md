@@ -1,4 +1,4 @@
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22040962.svg)](https://doi.org/10.5281/zenodo.22040962)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22040962.svg)](https://doi.org/10.5281/zenodo.22040962) [![Lean proof build](https://github.com/DavidFox998/Certifications/actions/workflows/lean.yml/badge.svg)](https://github.com/DavidFox998/Certifications/actions/workflows/lean.yml)
 
 # Theorema Aureum 143 — Certifications
 
